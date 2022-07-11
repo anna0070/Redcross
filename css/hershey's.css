@@ -1,0 +1,649 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&family=PT+Serif&family=Scheherazade+New&display=swap');
+/* 구글폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+/* 구글아이콘 */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}
+
+/* outline: 1px solid rgb(238, 2, 2); */
+
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+  color: rgb(253, 244, 244);
+  text-decoration: none
+}
+
+a:hover {
+  color: #ffd9c6be;
+}
+
+a:active {
+  color: #d1b6b3;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+
+  background-color: #a38373be;
+  background-size: cover;
+  overflow-X: hidden;
+  font-family: 'Noto Sans KR', sans-serif;
+
+}
+
+
+/* Top */
+/* Navigation */
+
+.nav {
+  width: 100%;
+  margin: 0px 0 10px 0px;
+  text-align: center;
+}
+
+.nav-items {
+  padding: 0;
+  list-style: none;
+}
+
+.nav-item {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-link,
+.nav-link:link,
+.nav-link:visited,
+.nav-link:active,
+.submenu-link,
+.submenu-link:link,
+.submenu-link:visited,
+.submenu-link:active {
+  display: block;
+  position: relative;
+  font-size: 22px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  color: rgb(126, 70, 70);
+}
+
+.nav-link,
+.nav-link:link,
+.nav-link:visited,
+.nav-link:active {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+/* 메뉴아래 줄 */
+.nav-link::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: rgba(53, 10, 10, 0.856);
+  opacity: 0;
+  -webkit-transform: translate(0, 10px);
+  transform: translate(0, 10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::before {
+  opacity: 1;
+  -webkit-transform: translate(0, 5px);
+  transform: translate(0, 5px);
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown .nav-link {
+  padding-right: 15px;
+  height: 17px;
+  line-height: 17px;
+}
+
+/* 메뉴옆화살표 */
+.dropdown .nav-link::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: 0;
+  border: 5px solid transparent;
+  border-top-color: #310e0a;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  z-index: 100;
+  width: 200px;
+  margin-left: -100px;
+  background: #fff2f2be;
+  border-radius: 3px;
+  line-height: 1.46667;
+  margin-top: -5px;
+  box-shadow: 0 0 8px rgba(97, 31, 31, 0.747);
+  opacity: 0;
+  -webkit-transform: translate(0, 0) scale(0.85);
+  transform: translate(0, 0) scale(0.85);
+  transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+  pointer-events: none;
+
+
+}
+
+.submenu::after,
+.submenu::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border: 10px solid transparent;
+  height: 0;
+
+}
+
+/* 삼각모양 */
+.submenu::after {
+  border-bottom-color: #fff2f2be;
+
+}
+
+.submenu::before {
+  margin-left: -13px;
+  border: 13px solid transparent;
+  border-bottom-color: #a38784;
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+
+}
+
+.submenu-items {
+  list-style: none;
+}
+
+.submenu-item {
+  display: block;
+  text-align: left;
+}
+
+.submenu-link,
+.submenu-link:link,
+.submenu-link:visited,
+.submenu-link:active {
+  color: #502e28;
+  padding: 4px 20px;
+}
+
+.submenu-link:hover {
+  text-decoration: underline;
+}
+
+.submenu-seperator {
+  height: 0;
+  margin: 12px 10px;
+  border-top: 1px solid rgb(41, 39, 39);
+}
+
+.show-submenu .submenu {
+  opacity: 1;
+  -webkit-transform: translate(0, 25px) scale(1);
+  transform: translate(0, 25px) scale(1);
+  pointer-events: auto;
+}
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.iconmouse {
+  position: relative;
+  top: 700px;
+  left: 48%;
+
+}
+
+.iconmouse img {
+  width: 86PX;
+  height: 86PX;
+}
+
+.top_logo {
+  background-image: url(/imges/Hershys/toplogo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 234px;
+  height: 110px;
+  margin: auto;
+
+
+}
+
+.sec01 {
+  margin: 100vh 0 0 0px;
+  padding: 0;
+
+}
+
+.left_history {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #1f0907;
+  text-align: center;
+  display: flex;
+}
+
+.box01 {
+  background-color: #33100c80;
+  background-size: cover;
+  width: 100%;
+  height: 630px;
+  margin-top: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.left_history span {
+  text-decoration: underline;
+  color: #cccccc;
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 0 25px 0px;
+  letter-spacing: -2px;
+}
+
+.left_history p {
+  font-size: 1.3rem;
+  letter-spacing: -1px;
+  margin: 20px 0 20px 0px;
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+  color: #fdebe8;
+font: bold;
+}
+
+.left_history h1 {
+  font-size: 2rem;
+  color: #FCFBFB;
+  margin: 45px 0 0 0px;
+  text-align: center;
+  font-weight: 600;
+
+}
+
+
+ /* .sec02 {
+width: 100%;
+background-color: #33100c;
+ height: 523px;
+} */
+
+.box02 {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  width: 100%;
+background-color: #33100c;
+ height: 523px;
+} 
+
+.story01 p {
+  font-size: 0.9rem;
+}
+
+.story01 {
+    /* background: url("/imges/Hershys/hershey_ai.png") no-repeat; */
+    background: url(/imges/Hershys/milton.png);
+     background-repeat: no-repeat;
+    background-size: 360px 300px;
+    width: 320px;
+    height: 330px;
+    margin: 75px;
+    position: relative;
+    top:0px;
+    left: 0px;
+    z-index: 1; 
+}
+
+
+
+ .story02 {
+    background: url(/imges/Hershys/histry02.png);
+    background-repeat: no-repeat;
+    background-size: 360px 300px;
+    width: 320px;
+    height: 330px;
+    margin: 75px;
+}
+
+.story03 {
+    background: url(/imges/Hershys/historylogo.png);
+    background-repeat: no-repeat;
+    background-size: 360px 300px;
+    width: 320px;
+    height: 330px;
+    margin: 75px;
+} 
+
+
+.box2_01 a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box2_01 span {
+  font-size: 1.5rem;
+  margin-top: -50px;
+}
+
+
+
+/* background 이미지 01*/
+.brand_photo {
+
+  background: url(/imges/Hershys/hersheysbackground02.png) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  background-position: top center;
+  height: 50vh;
+  width: 100%;
+  padding-top: 230px;
+  padding-bottom: 230px;
+  /* overflow: hidden; */
+  position: relative;
+  background-blend-mode: multiply;
+  background-color: #a38373be;
+
+}
+
+.backgroundimg {
+
+  background: url(/imges/Hershys/sustainability-cocoa-person-holding-cocoa-pod.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /* -webkit-background-size: cover; */
+  background-position: top center;
+  height: 50vh;
+  width: 100%;
+  padding-top: 230px;
+  padding-bottom: 230px;
+  /* overflow: hidden; */
+  position: relative;
+  background-blend-mode: multiply;
+  background-color: #a38373be;
+
+}
+
+.recipes_photo {
+
+  background: url(/imges/Hershys/hersheysbackground01.png) no-repeat;
+
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  background-position: top center;
+  height: 50vh;
+  width: 100%;
+  padding-top: 230px;
+  padding-bottom: 70px;
+  overflow: hidden;
+  position: relative;
+  background-blend-mode: multiply;
+  background-color: #b4a39abe;
+
+
+}
+
+
+/* sec03 
+brand */
+/* #3C131C; */
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+.slider {
+  height: 450px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  /* width: calc(250px * 14); */
+}
+
+.slider .slide-track .slide {
+  height: 300px;
+  width: 100%
+}
+
+
+.sec03 {
+  background-color: #33100c;
+  background-size: cover;
+  width: 100%;
+  height: 650px;
+}
+
+.logo_01 {
+  background: url(/imges/Hershys/whitelogo\ 1.png);
+  background-repeat: no-repeat;
+  width: 38%;
+  height: 170px;
+  position: relative;
+  top: 50px;
+  left: 46%;
+}
+
+
+/* sec04 */
+
+.sec04 {
+
+  background-color: #33100c;
+  background-size: cover;
+  width: 100%;
+  height: 530px;
+}
+
+.recipetitle {
+  font-size: 2rem;
+  color: #FCFBFB;
+  text-align: center;
+  font-weight: 590;
+  padding: 75px 0px 13px 0px;
+  letter-spacing: -3px;
+}
+
+.grid-recipe {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(196px, 1fr));
+  grid-gap: 1em;
+  margin: 130px 60px 0px 60px;
+}
+
+
+/* hover styles */
+.location-image a img {
+  width: 220px;
+  height: 180px;
+
+}
+
+.location-listing {
+  position: relative;
+
+}
+
+.location-image {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.location-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+}
+
+.location-title {
+  font-size: 1.3rem;
+  font-weight: lighter;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  background: rgba(90, 0, 10, 0.4);
+  color: #FCFBFB;
+
+  /* position the text in t’ middle*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-listing:hover .location-title {
+  opacity: 1;
+}
+
+.location-listing:hover .location-image img {
+  filter: blur(2px);
+}
+
+
+/* for touch screen devices */
+@media (hover: none) {
+  .location-title {
+    opacity: 1;
+  }
+
+  .location-image img {
+    filter: blur(1px);
+  }
+}
+
+
+
+/* footer#33100c; */
+
+
+footer {
+
+  font-size: 1rem;
+  font-weight: 300;
+  display: flex;
+  width: 100%;
+  height: 300px;
+  justify-content: space-between;
+  background-color: #1f0907;
+  background-size: cover;
+  color: #b4a39a
+}
+
+
+address {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  text-emphasis: none;
+  font-size: 1rem;
+ 
+}
+
+.company,
+address {
+  margin: 35px 20px 0 20px;
+}
+
+video {
+  width: 101vw;
+  height: 61vw;
+  overflow: hidden;
+  position: fixed;
+  top: -42px;
+  left: 0;
+  z-index: -1;
+}
+
+a#TOP {
+  font-style: normal;
+  position: fixed;
+  right: 2%;
+  bottom: 45px;
+  display: none;
+  z-index: 999;
+  color: rgb(241, 232, 223);
+  font-size: 0.9rem;
+  width: 30px;
+  height: 30px;
+}
+
+.sns img {
+  width: 24px;
+  height: 24px;
+  margin: 9px 3px 6px 7px;
+
+}

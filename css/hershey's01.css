@@ -1,0 +1,363 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&family=PT+Serif&family=Scheherazade+New&display=swap');
+/* 구글폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+/* 구글아이콘 */
+
+  *{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* outline: 1px solid rgb(238, 2, 2); */
+}
+
+body {
+  overflow-X: hidden;
+  font-family: 'Noto Sans KR', sans-serif;
+/* background-color:  #b9b3a9; */
+
+}
+
+a:link,
+a:visited {
+  color: #3d312f;
+  text-decoration: none
+}
+
+a:hover {
+  color: rgba(122, 101, 95, 0.938);
+}
+
+a:active {
+  color: #a38784;
+}
+
+li {
+  list-style-type: none;
+}
+.nav {
+  width: 100%;
+  margin: 0px 0 10px 0px;
+  text-align: center;
+}
+
+/* Navigation */
+.nav-items {
+  padding: 0;
+  list-style: none;
+}
+
+.nav-item {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-link,
+.nav-link:link,
+.nav-link:visited,
+.nav-link:active,
+.submenu-link,
+.submenu-link:link,
+.submenu-link:visited,
+.submenu-link:active {
+  display: block;
+  position: relative;
+  font-size: 22px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+
+.nav-link,
+.nav-link:link,
+.nav-link:visited,
+.nav-link:active {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+/* 메뉴아래 줄 */
+.nav-link::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: rgba(53, 10, 10, 0.856);
+  opacity: 0;
+  -webkit-transform: translate(0, 10px);
+  transform: translate(0, 10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::before {
+  opacity: 1;
+  -webkit-transform: translate(0, 5px);
+  transform: translate(0, 5px);
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown .nav-link {
+  padding-right: 15px;
+  height: 17px;
+  line-height: 17px;
+}
+/* 메뉴옆화살표 */
+.dropdown .nav-link::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: 0;
+  border: 5px solid transparent;
+  border-top-color: #310e0a;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  z-index: 100;
+  width: 200px;
+  margin-left: -100px;
+  background: rgba(255, 255, 255, 0.24);
+  border-radius: 3px;
+  line-height: 1.46667;
+  margin-top: -5px;
+  box-shadow: 0 0 8px rgba(97, 31, 31, 0.747);
+  opacity: 0;
+  -webkit-transform: translate(0, 0) scale(0.85);
+  transform: translate(0, 0) scale(0.85);
+  transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+  pointer-events: none;
+}
+
+.submenu::after,
+.submenu::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border: 10px solid transparent;
+  height: 0;
+}
+
+.submenu::after {
+  border-bottom-color: rgba(255, 255, 255, 0.747);
+}
+
+.submenu::before {
+  margin-left: -13px;
+  border: 13px solid transparent;
+  border-bottom-color: #a38784;
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+}
+
+.submenu-items {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.submenu-item {
+  display: block;
+  text-align: left;
+}
+
+.submenu-link,
+.submenu-link:link,
+.submenu-link:visited,
+.submenu-link:active {
+  color: #502e28;
+  padding: 2px 20px;
+}
+
+.submenu-link:hover {
+  text-decoration: underline;
+}
+
+.submenu-seperator {
+  height: 0;
+  margin: 12px 10px;
+  border-top: 1px solid rgb(41, 39, 39);
+}
+
+.show-submenu .submenu {
+  opacity: 1;
+  -webkit-transform: translate(0, 25px) scale(1);
+  transform: translate(0, 25px) scale(1);
+  pointer-events: auto;
+}
+
+.top_logo {
+  background-image: url(/imges/Hershys/toplogo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 234px;
+  height: 109px;
+  margin: 0 auto;
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.sec01img{
+  background: url(../imges/Hershys/Hersheys_PLP_Banner_Hersheys_Desktop_v01.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+
+}  
+
+.text01{
+  position: relative;
+  top:-155px;
+  left: 196px;
+  color: #310e0a;
+  font-size: 1.5rem;
+}
+/* h1{
+  font-size: 2.5rem;
+  text-align: center;
+  /* border: 1px; */
+
+
+/* .sec02{
+  display: flex;
+  width: 100%;
+} */
+h1{
+  font-size: 2rem;
+  color: #310e0a;
+  text-align: center;
+  margin: 5px;
+
+}
+.tabV{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: relative;
+  top:30px;
+  left: 125px;
+}
+.tabV ul{
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+}
+/* tab메뉴 */
+.tabV ul li{
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  padding: 0px 40px;
+  margin: 0 0 2px 0;
+  background: #e6d0d0;
+  font-weight: 600;
+  color: rgb(70, 36, 36);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  position: relative;
+  cursor: pointer;
+}
+.tabV ul li.on{ background: rgb(185, 168, 168); }
+.tabV ul li:hover::after,
+.tabV ul li.on::after{
+  width: 5px;
+  height: 100%;
+  background: #faecea;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.tabV ul li:hover::after{ background: rgba(255,255,255,0.3); }
+.tabV .content{
+  width: calc(100% - 150px);
+  height: 780px;
+  color: rgb(122, 96, 96);
+}
+.tabV .content .conBox{
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+.tabV .content .conBox.on{ display:block; }
+
+table tr td img{
+  margin: -62px 30px 10px 30px;
+}
+
+.conBox h1{
+  position: absolute;
+  top:96px;
+  left: 738px;
+  text-align: center;
+  color: aqua;
+  font-size: 2.8rem;
+}
+td p{
+  font-size: 0.9rem;
+  color: #33100c;
+  text-align: center;
+
+  }
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+footer {
+
+  font-size: 1rem;
+  font-weight: 300;
+  display: flex;
+  width: 100%;
+  height: 270px;
+  justify-content: space-between;
+  background-color: #a38373be;
+  background-size: cover;
+  color: #fff;
+}
+
+address {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  text-emphasis: none;
+  font-size: 1rem;
+  color: #33100c;
+
+}
+.company,
+address{
+  margin: 20px 20px 0 20px;
+}
+.Hershy01{
+  width: 100%;
+  
+}
+
+a#TOP {
+  font-style: normal;
+  position: fixed;
+  right: 2%;
+  bottom: 45px;
+  display: none;
+  z-index: 999;
+  color: rgb(241, 232, 223);
+  font-size: 0.9rem;
+  width: 30px;
+  height: 30px;
+}

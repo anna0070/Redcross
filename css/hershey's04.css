@@ -1,0 +1,309 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&family=PT+Serif&family=Scheherazade+New&display=swap');
+/* 구글폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+/* 구글아이콘 */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* outline: 1px solid rgb(238, 2, 2); */
+}
+
+body {
+  overflow-X: hidden;
+  font-family: 'Noto Sans KR', sans-serif;
+  background: url(/imges/Hershys/kiss_pattern_a-munsell_transparent001.png);
+
+}
+
+a:link,
+a:visited {
+  color: #a38784;
+  text-decoration: none
+}
+
+a:hover {
+  color: rgba(122, 101, 95, 0.938);
+}
+
+a:active {
+  color: #a38784;
+}
+
+li {
+  list-style-type: none;
+}
+.nav {
+  width: 100%;
+  margin: 0px 0 10px 0px;
+  text-align: center;
+}
+
+/* Navigation */
+.nav-items {
+  padding: 0;
+  list-style: none;
+}
+
+.nav-item {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-link,
+.nav-link:link,
+.nav-link:visited,
+.nav-link:active,
+.submenu-link,
+.submenu-link:link,
+.submenu-link:visited,
+.submenu-link:active {
+  display: block;
+  position: relative;
+  font-size: 22px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+
+.nav-link,
+.nav-link:link,
+.nav-link:visited,
+.nav-link:active {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+/* 메뉴아래 줄 */
+.nav-link::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: rgba(53, 10, 10, 0.856);
+  opacity: 0;
+  -webkit-transform: translate(0, 10px);
+  transform: translate(0, 10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::before {
+  opacity: 1;
+  -webkit-transform: translate(0, 5px);
+  transform: translate(0, 5px);
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown .nav-link {
+  padding-right: 15px;
+  height: 17px;
+  line-height: 17px;
+}
+/* 메뉴옆화살표 */
+.dropdown .nav-link::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: 0;
+  border: 5px solid transparent;
+  border-top-color: #310e0a;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  z-index: 100;
+  width: 200px;
+  margin-left: -100px;
+  background: rgba(255, 255, 255, 0.24);
+  border-radius: 3px;
+  line-height: 1.46667;
+  margin-top: -5px;
+  box-shadow: 0 0 8px rgba(97, 31, 31, 0.747);
+  opacity: 0;
+  -webkit-transform: translate(0, 0) scale(0.85);
+  transform: translate(0, 0) scale(0.85);
+  transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+  pointer-events: none;
+}
+
+.submenu::after,
+.submenu::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border: 10px solid transparent;
+  height: 0;
+}
+
+.submenu::after {
+  border-bottom-color: rgba(255, 255, 255, 0.747);
+}
+
+.submenu::before {
+  margin-left: -13px;
+  border: 13px solid transparent;
+  border-bottom-color: #a38784;
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+}
+
+.submenu-items {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.submenu-item {
+  display: block;
+  text-align: left;
+}
+
+.submenu-link,
+.submenu-link:link,
+.submenu-link:visited,
+.submenu-link:active {
+  color: #502e28;
+  padding: 2px 20px;
+}
+
+.submenu-link:hover {
+  text-decoration: underline;
+}
+
+.submenu-seperator {
+  height: 0;
+  margin: 12px 10px;
+  border-top: 1px solid rgb(41, 39, 39);
+}
+
+.show-submenu .submenu {
+  opacity: 1;
+  -webkit-transform: translate(0, 25px) scale(1);
+  transform: translate(0, 25px) scale(1);
+  pointer-events: auto;
+}
+
+.top_logo {
+  background-image: url(/imges/Hershys/toplogo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 234px;
+  height: 109px;
+  margin: 0 auto;
+}
+/* nav 끝 */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.recipes h1 {
+  font-size: 2rem;
+  color: #310e0a;
+  position: relative;
+  top: 205px;
+  left: 322px;
+
+}
+.inner img {
+  width: 300px;
+  height: 200px;
+  margin: 14px;
+  box-shadow: 0px 3px 10px 0px rgb(153, 153, 153);
+  border-radius: 240px;
+  margin: 0 60px 0 60px;
+
+}
+.inner img:hover {
+  transform: scale(1.1);
+}
+.recipes img {
+  width: 100%;
+  height: 540px;
+  margin-top: -85px;
+}
+.recipesmenu h1 {
+  font-size: 2rem;
+  color: #310e0a;
+  margin: 50px;
+  text-align: center;
+  /* background-color: #a38784; */
+  /* width: 100%;
+  height: 20px; */
+}
+.inner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.inner p {
+  text-align: center;
+  font-size: 1.5rem;
+
+}
+
+footer {
+  background: url(/imges/Hershys/footer-bg.jpg) no-repeat;
+
+  font-size: 1rem;
+  font-weight: 300;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  background-color: #33100c;
+  background-size: cover;
+  color: #FCFBFB
+}
+
+
+address {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  text-emphasis: none;
+  font-size: 1rem;
+  color: #FCFBFB
+}
+
+.company,
+address {
+  margin: 43px 50px 0 100px;
+}
+
+.sns {
+  display: flex;
+}
+.sns img {
+  width: 24px;
+  height: 24px;
+  margin: 9px 3px 6px 7px;
+}
+
+a#TOP {
+  font-style: normal;
+  position: fixed;
+  right: 2%;
+  bottom: 45px;
+  display: none;
+  z-index: 999;
+  color: rgb(241, 232, 223);
+  font-size: 0.9rem;
+  width: 30px;
+  height: 30px;
+}

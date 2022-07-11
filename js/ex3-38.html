@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>배열 sort()</title>
+    <script>
+        //array 주요 메서드
+
+        var alphavet = ['a', 'b', 'c', 'd', 'e'] //전역변수 선언
+
+         //slice(n) index n번 이전까지의 배열 반환,
+         //매개변수 n은 n1,n2 = n1부터 n2번 이전까지(n2 미포함),
+         //n = n번 이후 전부(n번째 포함)
+         console.log(alphavet.slice(0, 3)); //['a','b','c'] 배열출력
+         console.log(alphavet.slice(2)); //['c','d','e'] 배열출력
+       
+        //join('X') 배열의 요소들을 파라미터로 연결하여 문자로 반환
+        console.log(alphavet.join('-')); //a-b-c-d-e
+        console.log(typeof alphavet.join('-')); //string
+        console.log(alphavet.join(0)); //a0b0c0d0e
+
+        //concat() 배열 연결
+        var alphavet1 = ['a', 'b', 'c'] //전역변수 선언
+        var alphavet2 = ['d', 'e'] //전역변수 선언
+        console.log(alphavet1.concat(alphavet2));
+        //['a','b','c','d','e'] 합쳐진 배열출력
+        console.log(alphavet1 + alphavet2);
+        console.log(`${alphavet1}${alphavet2}`);
+        // 배열이 합쳐진 것이 아니라 문자열이 그냥 연결된 형태로 나온다. 쓸모없음.
+
+        var alphavetSum = alphavet1.concat(alphavet2);
+        console.log(alphavetSum); // 값을 합친 형태로 신규배열 생성
+        var alphavetSum2 = alphavet1 + alphavet2;
+        console.log(alphavetSum2); // 값이 스트링으로 연결된 상태 그자체로 출력
+
+
+        //toString() 배열의 값을 뽑아 문자로 변환
+        console.log(alphavet.toString()); //a,b,c,d,e 문자출력
+
+
+
+        //*배열의 내용을 변경시키는 메서드*
+        //shift() 첫번째 배열 삭제
+        alphavet.shift();
+        console.log(alphavet); //['b','c','d','e'] 삭제된 배열출력
+
+        //unshift() 첫번째 배열 추가
+        alphavet.unshift('a');
+        console.log(alphavet); //['a','b','c','d','e'] 추가된 배열출력
+
+        //pop() 마지막 배열 삭제
+        alphavet.pop();
+        console.log(alphavet); //['a','b','c','d'] 삭제된 배열출력
+
+        //push() 마지막 배열 추가
+        alphavet.push('e');
+        alphavet.push('f');
+        console.log(alphavet);
+        //['a','b','c','d','e','f'] 추가된 배열출력
+
+
+        //splice() 지정된 부분의 배열 추가, 삭제, 변경
+        var alphavet3 = ['a', 'b', 'c', 'd', 'e'] //전역변수 선언
+        alphavet3.splice(1, 0, 'f');
+        // .splice(배열의 index, 삭제개수, 변경할것)
+        // alphavet3[1]를 삭제하지말고, 그자리에 'f'추가
+        console.log(alphavet3);
+        //['a','f','b','c','d','e'] 추가된 배열출력
+
+        var alphavet4 = ['a', 'b', 'c', 'd', 'e'] //전역변수 선언
+        alphavet4.splice(1, 1);
+        //배열의 index, 삭제개수, 변경할것(안씀)
+        //alphavet4[1] 삭제
+        console.log(alphavet4); //['a','c','d','e'] 삭제된 배열출력
+
+        var alphavet5 = ['a', 'b', 'c', 'd', 'e'] //전역변수 선언
+        alphavet5.splice(1, 1, 'f');
+        //배열의 index, 삭제개수, 변경할것
+        //alphavet5[1] 삭제후 그자리에 'f'로 변경
+        console.log(alphavet5); //['a','f','c','d','e'] 삭제후 추가된 배열출력
+
+        var alphavet6 = ['a', 'b', 'c', 'd', 'e'] //전역변수 선언
+        alphavet6.splice(0, 3, 'f', 'g', 'h');
+        //배열의 index, 삭제개수, 변경할것
+        //alphavet6[0]부터 3개배열 삭제후 그자리에 'f','g','h'로 변경
+        console.log(alphavet6); //['f','g','h','d','e'] 변경된 배열출력
+
+
+        //reverse() 배열의 순서 변경
+        console.log(alphavet.reverse());
+        //["f", "e", "d", "c", "b", "a"]
+
+        console.log(`389쪽`);
+        /*389쪽----------------------------------------*/
+        //sort() 배열을 오름차순으로 정렬
+        //문자열 비교 정렬이라 원하는 수치 정렬과 값이 다를 수 있음
+        //파라미터를 이용하여 문자열내의 오름차순이 적용되게 쓸 것
+        var num = [2, 41, 11];
+        // console.log(num.sort());
+        //메서드의 파라미터를 함수로 넣었다.
+        var num = num.sort(function(a, b) {
+            return a - b //오름차순
+        });
+        console.log(num);
+
+        var num2 = num.sort(function(a, b) {
+            return b - a //내림차순
+        });
+        console.log(num2);
+        
+        // 문자열 오름차순
+        var str1 = ['하', '나', '라'];
+        var str2 = ['b', 't', 'a'];
+        console.log(str1.sort());
+        console.log(str2.sort());
+        
+        var str3 = ['banana', 'b', 'boy'];
+        console.log(str3.sort());
+        
+        // 문자열 내림차순
+        str3.sort(function(a, b) {
+            if(a < b) return 1;
+            if(a > b) return -1;
+            if(a === b) return 0;
+        });
+        console.log(str3);
+
+        // 3-38예제
+        var info = [45, 11, 7, 32, 20, 19];
+        info.sort(function(a, b) {
+            return a - b;
+        });
+        console.log(info.toString());
+        //오름차순으로 정렬된 배열을 문자로 뽑아서 출력
+
+
+        console.log(`391쪽`);
+        /*391쪽----------------------------------------*/
+        //for...of문
+        //for구문을 돌려서 배열에서 원하는 값 출력
+        var city = ['서울', '대전', '대구', '부산'];
+        for (var i in city) {
+            console.log(i);
+        }
+        //index번호만 나옴 0,1,2,3 
+        //for...in구문은 리터럴 함수에서만 사용할 것, 이름에 접근하는 for구문
+
+        for (var i of city) {
+            console.log(i);
+        } // for...of구문은 값에 접근하는 for 구문. 서울, 대전, 대구, 부산으로 출력
+
+
+        //forEach()구문
+        var num3 = [1, 2, 3];
+        num3.forEach(function(value, index, array) {
+            // value, index, array는 이미 지정된 파라미터이다.
+            console.log(`값은 ${value}\nindex번호는 ${index}\n배열로 표시하면 ${array} 입니다.`);
+            console.log(array);
+        });
+        //배열 값에 각각 접근하여 for구문을 돌려서 결과값 출력(1set)
+        //모든 값에 index 순서대로 접근하며 모두 출력
+        num3.forEach(function(v, i, cc) {
+            console.log(`값은 ${v}\nindex번호는 ${i}\n배열로 표시하면 ${cc} 입니다.`);
+            // 함수의 매개변수로 전달되어 반복적으로 실행하는 함수를 콜백함수라고 한다.
+        });
+
+
+        var sum = 0;
+        num3.forEach(function(value2) {
+            return sum += value2;
+        });
+        console.log(sum); // 1+2+3 = 6
+        // num3 배열에 접근해서 각 배열값을 더해서 누적시킨 값을 출력해라
+
+        console.log(`.map() 메서드`);
+        // .map() 기존 배열안에서 새로운 배열 추가
+        var base = [10, 20, 30];
+        // base.map(function(v, i, a) {
+        //     console.log(`값은 ${v}\nindex번호는 ${i}\n배열로 표시하면 ${a} 입니다.`);
+        //     // 값은 10 index번호는 0 배열로 표시하면 10,20,30 입니다.
+        //     // 라는 형식으로 배열 3번째까지 반복
+        // });
+        var area = base.map(function(apple) {
+            return apple * 8;
+            // 배열의 각 값에 접근하여 *8 하여 출력. 80, 160, 240
+        });
+        console.log(area); // 그 값을 배열로 생성 [80, 160, 240]
+
+        // map메서드의 파라미터는 이름상관없음, 순서대로 접근하는 형태로 생각할것. map(값, 인덱스, 배열)로 파라미터를 받는다
+        // .forEach()는 접근하고 계산까지만 하는것, .map()는 접근해서 계산하고 이를 배열로 만들어주는것까지.
+
+
+        console.log(`.filter() 메서드`);
+        // .filter() 조건에 맞는 배열요소만 골라서 신규배열 생성
+        // .filter() = 조건(map()) 라고 생각할 것
+
+        var data = ['javascript', 20, 30, 'jQuery'];
+        data.filter(function(v, i, a) {
+            console.log(`값은 ${v}\nindex번호는 ${i}\n배열로 표시하면 ${a} 입니다.`);
+            // 값은 javascript index번호는 0 배열로 표시하면 javascript,20,30,jQuery 입니다.
+            // 의 형식으로 배열 4번째까지 반복
+        });
+
+        var dataFilter = data.filter(function(v) {
+            return typeof v === 'number';
+            // value값(파라미터 'v')이 숫자인것만 추출하여 배열 생성
+        });
+        console.log(dataFilter); // [20, 30]
+
+        // Math 객체, 수학 관련 프로퍼티와 메서드가 미리 지정되어있다.
+        console.log(Math.PI);
+        console.log(Math.SQRT2);
+        console.log(Math.abs(-50)); //50
+        console.log(Math.max(-15, 10)); //10
+        console.log(Math.min(-15, 10)); //-15
+        //음수까지 파악가능
+        console.log(Math.round(10.5554755)); //11
+        console.log(Math.round(10.4554755)); //10
+        //소수점 이하 5이상이면 반올림, 반대면 버림하여 정수 반환
+        console.log(Math.ceil(10.1554755)); //11 소수점 아래 올림
+        console.log(Math.floor(10.1554755)); //10 소수점 아래 절삭
+        console.log(Math.random()); //0~1사이의 난수 랜덤 반환
+        console.log(Math.random()*3); // 0~2.999... 난수 랜덤 반환
+        console.log(Math.floor(Math.random()*3)); // 0~2 랜덤 반환
+        
+        console.log(Math.sin(536.4)); //사인값
+        console.log(Math.tan(58.6)); //탄젠트값
+        console.log(Math.sqrt(78.69)); //제곱근값
+        // 파라미터를 쓰지 않으면 NAN출력
+
+
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

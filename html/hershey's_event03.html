@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <!-- <link rel="stylesheet" type="text/css" href="/css/hershey's02.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" media="all and (max-width: 1024px)" href="/css/hershey's03T.css">
+    <link rel="stylesheet" type="text/css" media="all and (max-width: 640px)" href="/css/hershey's03M.css"> -->
+  <title> 😎Hershy's</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+  
+  
+    a:link,
+    a:visited {
+      color: #33100c;
+      text-decoration: none
+    }
+  
+    a:hover {
+      color: #9c1101;
+    }
+  
+    a:active {
+      color: #33100c
+    }
+  
+    li {
+      list-style-type: none;
+    }
+  
+  
+    /* Top */
+    /* Navigation */
+  
+    .nav {
+      width: 100%;
+      margin: 0px 0 10px 0px;
+      text-align: center;
+    }
+  
+    .nav-items {
+      padding: 0;
+      list-style: none;
+    }
+  
+    .nav-item {
+      display: inline-block;
+      margin-right: 25px;
+    }
+  
+    .nav-item:last-child {
+      margin-right: 0;
+    }
+  
+    .nav-link,
+    .nav-link:link,
+    .nav-link:visited,
+    .nav-link:active,
+    .submenu-link,
+    .submenu-link:link,
+    .submenu-link:visited,
+    .submenu-link:active {
+      display: block;
+      position: relative;
+      font-size: 22px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      text-decoration: none;
+      outline: none;
+      color: rgb(126, 70, 70);
+    }
+  
+    .nav-link,
+    .nav-link:link,
+    .nav-link:visited,
+    .nav-link:active {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+  
+    /* 메뉴아래 줄 */
+    .nav-link::before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: rgba(53, 10, 10, 0.856);
+      opacity: 0;
+      -webkit-transform: translate(0, 10px);
+      transform: translate(0, 10px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+  
+    .nav-link:hover::before,
+    .nav-link:hover::before {
+      opacity: 1;
+      -webkit-transform: translate(0, 5px);
+      transform: translate(0, 5px);
+    }
+  
+    .dropdown {
+      position: relative;
+    }
+  
+    .dropdown .nav-link {
+      padding-right: 15px;
+      height: 17px;
+      line-height: 17px;
+    }
+  
+    /* 메뉴옆화살표 */
+    .dropdown .nav-link::after {
+      content: "";
+      position: absolute;
+      top: 6px;
+      right: 0;
+      border: 5px solid transparent;
+      border-top-color: #310e0a;
+    }
+  
+    .submenu {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      z-index: 100;
+      width: 200px;
+      margin-left: -100px;
+      background: #fff2f2be;
+      border-radius: 3px;
+      line-height: 1.46667;
+      margin-top: -5px;
+      box-shadow: 0 0 8px rgba(97, 31, 31, 0.747);
+      opacity: 0;
+      -webkit-transform: translate(0, 0) scale(0.85);
+      transform: translate(0, 0) scale(0.85);
+      transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+      pointer-events: none;
+  
+  
+    }
+  
+    .submenu::after,
+    .submenu::before {
+      content: "";
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      margin-left: -10px;
+      border: 10px solid transparent;
+      height: 0;
+  
+    }
+  
+    /* 삼각모양 */
+    .submenu::after {
+      border-bottom-color: #fff2f2be;
+  
+    }
+  
+    .submenu::before {
+      margin-left: -13px;
+      border: 13px solid transparent;
+      border-bottom-color: #a38784;
+      -webkit-filter: blur(1px);
+      filter: blur(1px);
+  
+    }
+  
+    .submenu-items {
+      list-style: none;
+    }
+  
+    .submenu-item {
+      display: block;
+      text-align: left;
+    }
+  
+    .submenu-link,
+    .submenu-link:link,
+    .submenu-link:visited,
+    .submenu-link:active {
+      color: #502e28;
+      padding: 4px 20px;
+    }
+  
+    .submenu-link:hover {
+      text-decoration: underline;
+    }
+  
+    .submenu-seperator {
+      height: 0;
+      margin: 12px 10px;
+      border-top: 1px solid rgb(41, 39, 39);
+    }
+  
+    .show-submenu .submenu {
+      opacity: 1;
+      -webkit-transform: translate(0, 25px) scale(1);
+      transform: translate(0, 25px) scale(1);
+      pointer-events: auto;
+    }
+  
+    .top_logo {
+      background-image: url(/imges/Hershys/toplogo.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 234px;
+      height: 109px;
+      margin: auto;
+  
+  
+    }
+  
+    .eventimg {
+      background: url("/imges/Hershys/HP_1x3_ColoredKiss.jpg") no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 900px;
+  
+    }
+  
+    .event h1 {
+      color: rgba(43, 14, 14, 0.897);
+      font-size: 1.5rem;
+      position: absolute;
+      top: 460px;
+      left: 800px;
+    }
+  
+  
+    footer {
+  
+      font-size: 1rem;
+      font-weight: 300;
+      display: flex;
+      width: 100%;
+      height: 270px;
+      justify-content: space-between;
+      background-color: #a38373be;
+      background-size: cover;
+      color: #fff;
+      
+      font: 600;
+  
+    }
+  
+    address {
+      font-style: normal;
+      display: flex;
+      flex-direction: column;
+      text-emphasis: none;
+      font-size: 1rem;
+      color: #33100c;
+  
+    }
+  
+    .company,
+    address {
+      margin: 20px 20px 0 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="top">
+
+      <div class="top_logo">
+        <a href="./hershey's.html" class="logo"></a>
+      </div>
+    </div>
+    <nav class="nav">
+      <ul class="nav-items">
+        <li class="nav-item">
+          <a href="./hershey's.html" class="nav-link"><span>HOME</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="./hershey's_01.html" class="nav-link"><span>BRANDS</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="./hershey's_recipes04.html" class="nav-link"><span>RECIPES</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="./hershey's_ourstory02.html" class="nav-link"><span>OURSTORY</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="./hershey's_event03.html" class="nav-link"><span>EVENTS</span></a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+  <div class="event">
+    <div class="eventimg"></div>
+    <h1>" 현재 진행중인 이벤트가 없습니다.😎"</h1>
+
+  </div>
+  <footer>
+
+    <ul class="company">
+      <li><a href="https://www.thehersheycompany.com/en_us/home.html">THE HERSHEY COMPANY</a></li>
+      <li><a href="https://www.thehersheycompany.com/en_us/home/contact-us.html">CONTACT US</a></li>
+      <li><a href="#">THE HERSHEY CHOCOLATE WORLD</a></li>
+      <li><a href="#">ATTRACTON</a></li>
+      <li><a href="#">BAKE WITH US</a></li>
+      <li><a href="#">SLTE POLICY</a></li>
+    </ul>
+    <address>
+      <ul>
+        <li>씨에스에이치 푸드 한국 지점 대표자: 박선영</li>
+        <li>서울특별시 중구 삼일대로 343.11층 (저동1가, 대신파이낸스센터)사업자등록번호 : 101-84-03727</li>
+        <li>Copyring by 2017 HERSHEY INTERNATIONAL.ALL RIGHTS RESERVED</li>
+        <li>수입판매원 고객문의 번호 안내:</li>
+        <li>롯데제과 고객지원센터: 080-024-6060(허쉬바,키세스,너겟,미니어쳐,아이스브레이커스 외)</li>
+        <li>미성패밀리 소비자 상담실: 02-723-8175(후퍼스,허쉬코코아,시럽,베이킹 칩,쿠키 외)</li>
+        <li>농심고객상담팀: 080-023-5181(리세스 외)</li>
+        <li>(주)코스트코 코리아: 1899-9900</li>
+      </ul>
+      <div class="sns">
+        <a href="https://www.facebook.com/hersheykorea/"><img src="/imges/Hershys/Facebook.png" alt="페이스북아이콘"></a>
+        <a href="https://www.facebook.com/hersheykorea/"><img src="/imges/Hershys/Instagram.png" alt="인스타그램아이콘"></a>
+        <a href="https://www.facebook.com/hersheykorea/"><img src="/imges/Hershys/YouTube.png" alt="유투브아이콘"></a>
+
+
+      </div>
+    </address>
+
+
+
+  </footer>
+</body>
+
+</html>

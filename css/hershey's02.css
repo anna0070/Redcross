@@ -1,0 +1,606 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&family=PT+Serif&family=Scheherazade+New&display=swap');
+/* 구글폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+/* 구글아이콘 */
+
+
+
+
+* {
+
+  
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* outline: 1px solid rgb(238, 2, 2); */
+}
+
+body {
+  overflow-X: hidden;
+  font-family: 'Noto Sans KR', sans-serif;
+  
+
+}
+
+a:link,
+a:visited {
+  color: #a38784;
+  text-decoration: none
+}
+
+a:hover {
+  color: rgba(122, 101, 95, 0.938);
+}
+
+a:active {
+  color: #a38784;
+}
+
+li {
+  list-style-type: none;
+}
+.nav {
+  width: 100%;
+  margin: 0px 0 10px 0px;
+  text-align: center;
+}
+
+/* Navigation */
+.nav-items {
+  padding: 0;
+  list-style: none;
+}
+
+.nav-item {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-link,
+.nav-link:link,
+.nav-link:visited,
+.nav-link:active,
+.submenu-link,
+.submenu-link:link,
+.submenu-link:visited,
+.submenu-link:active {
+  display: block;
+  position: relative;
+  font-size: 22px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+
+.nav-link,
+.nav-link:link,
+.nav-link:visited,
+.nav-link:active {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+/* 메뉴아래 줄 */
+.nav-link::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: rgba(53, 10, 10, 0.856);
+  opacity: 0;
+  -webkit-transform: translate(0, 10px);
+  transform: translate(0, 10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::before {
+  opacity: 1;
+  -webkit-transform: translate(0, 5px);
+  transform: translate(0, 5px);
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown .nav-link {
+  padding-right: 15px;
+  height: 17px;
+  line-height: 17px;
+}
+/* 메뉴옆화살표 */
+.dropdown .nav-link::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: 0;
+  border: 5px solid transparent;
+  border-top-color: #310e0a;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  z-index: 100;
+  width: 200px;
+  margin-left: -100px;
+  background: rgba(255, 255, 255, 0.24);
+  border-radius: 3px;
+  line-height: 1.46667;
+  margin-top: -5px;
+  box-shadow: 0 0 8px rgba(97, 31, 31, 0.747);
+  opacity: 0;
+  -webkit-transform: translate(0, 0) scale(0.85);
+  transform: translate(0, 0) scale(0.85);
+  transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+  pointer-events: none;
+}
+
+.submenu::after,
+.submenu::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border: 10px solid transparent;
+  height: 0;
+}
+
+.submenu::after {
+  border-bottom-color: rgba(255, 255, 255, 0.747);
+}
+
+.submenu::before {
+  margin-left: -13px;
+  border: 13px solid transparent;
+  border-bottom-color: #a38784;
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+}
+
+.submenu-items {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.submenu-item {
+  display: block;
+  text-align: left;
+}
+
+.submenu-link,
+.submenu-link:link,
+.submenu-link:visited,
+.submenu-link:active {
+  color: #502e28;
+  padding: 2px 20px;
+}
+
+.submenu-link:hover {
+  text-decoration: underline;
+}
+
+.submenu-seperator {
+  height: 0;
+  margin: 12px 10px;
+  border-top: 1px solid rgb(41, 39, 39);
+}
+
+.show-submenu .submenu {
+  opacity: 1;
+  -webkit-transform: translate(0, 25px) scale(1);
+  transform: translate(0, 25px) scale(1);
+  pointer-events: auto;
+}
+
+.top_logo {
+  background-image: url(/imges/Hershys/toplogo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 234px;
+  height: 109px;
+  margin: 0 auto;
+}
+
+
+.sec01img01 {
+  background: url("/imges/Hershys/m0005.jpeg") no-repeat;
+  background-size: cover;
+  width: 450px;
+  height: 560px;
+
+}
+
+
+.sec01 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #a38373be;
+  background-size: cover;
+
+
+}
+.sec01text h2{
+  font-size: 1.5rem;
+  color: #33100c;
+  margin: 40px 0 0 0px;
+}
+.sec01text p{
+  font-size:0.9rem;
+  color: #33100c;
+ 
+}
+.sec01text {
+  width: 50%;
+  height: 500px;
+  margin: 160px 0px 100px 58px;
+  display: flex;
+  flex-direction: column;
+}
+
+.text01,
+.text02, 
+.text03 {
+  width: 100%;
+  height: 240px;
+  color: #33100c;
+} 
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
+/* sec02 */
+
+.sec02{
+  background: url("/imges/Hershys/kiss_pattern_a-munsell_transparent_reversed.png");
+  background-size: cover;
+  width: 100%;
+  height: 1000px;
+}
+.data ul>li>h4 {
+  font-size: 2rem;
+  color: rgb(34, 30, 26);
+}
+
+.data ul>li>p {
+  font-size: 1rem;
+}
+
+.data ul>li img {
+  width: 300px;
+  height: 200px;
+}
+
+.history-inner .inner{
+  margin: 0  4px 0 80px;
+  font-size: 1.5rem;
+  color: #33100c;
+}
+.phersheysbox{
+  position: relative;
+  margin-bottom: 30px
+}
+
+.hersheysbox:last-child {
+  margin-bottom: 0
+}
+
+.hersheysbox .map-content-wrap {
+  width: 100%;
+  height: 350px
+}
+
+.hersheysbox .map-content-wrap>div {
+  width: 100%;
+  height: 350px
+}
+
+.hersheysdata01 {
+  position: relative;
+  padding: 25px 0 50px;
+  overflow: hidden
+}
+
+
+.hersheysdata01 .master-title {
+  margin-bottom: 20px;
+  text-align: center
+}
+
+.hersheysdata01.master-title h2 {
+  margin: 0 0 10px;
+  line-height: 40px;
+  font-size: 30px;
+  font-weight: 700
+}
+
+.hersheysdata01 .master-title h3 {
+  margin: 0;
+  line-height: 28px;
+  font-size: 16px
+}
+
+.hersheysdata01 .hersheysdata02>li {
+  padding: 40px 0
+}
+
+.hersheysdata01.hersheysdata02>li:last-child {
+  padding-bottom: 0
+}
+
+.hersheysdata01 .box-left {
+  width: 35%;
+  float: left;
+  text-align: right;
+  padding-right: 100px
+}
+
+.hersheysdata01 .history-year {
+  margin-bottom: 20px;
+  font-size: 34px;
+  line-height: 34px;
+  color: #421b17da;
+ 
+}
+
+.hersheysdata01 .history-content {
+  font-size: 16px;
+  line-height: 30px;
+  color:#421b17da;
+}
+
+.hersheysdata01 .box-right {
+  width: 50%;
+  float: left;
+  position: relative;
+  padding-left: 46px
+}
+
+.hersheysdata01 .box-right:before,
+.hersheysdata01 .box-right:after {
+  content: "";
+  display: block;
+  position: absolute
+}
+
+.hersheysdata01 .box-right:before {
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  border-top: 20px solid #421b17da;
+  background: #421b17da;
+}
+
+.hersheysdata01 .box-right:after {
+  top: 0px;
+  left: -8px;
+  width: 8px;
+  height: 8px;
+  background: #421b17;
+  border: 5px solid #421b17;
+  border-radius: 100% ;
+}
+
+.hersheysdata01 .history-list ul li {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 70px;
+  color: #421b17da;
+}
+
+.hersheysdata01 .history-list ul li:last-child {
+  margin-bottom: 0
+}
+
+.hersheysdata01 .history-list ul li span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 700;
+  color: #421b17da;
+}
+
+/* sec03 */
+.sec03img{
+  background: url(/imges/Hershys/the-company-hero.png) no-repeat;
+  width: 100%;
+  height: 450px;
+}
+.sectext h1{
+  font-size: 2rem;
+
+
+}
+.sectext{
+  border: solid 3px  #d4a822;
+  width: 500px;
+  height: 150px;
+  text-align: center;
+ color: rgb(255 239 231);
+ position: relative;
+ top:100px;
+ left: 725px;
+}
+.sec03img{
+  background: url(/imges/Hershys/the-company-hero.png) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top center;
+  height: 1vh;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 400px;
+  position: relative;
+  background-blend-mode: multiply;
+  background-color: #a38373be;
+}
+.sec03Company{
+/* background: url("/imges/Hershys/kiss_pattern_a-munsell_transparent_reversed.png"); */
+/* background-size: cover; */
+width: auto;
+height: 500px;
+
+}
+.sec03Companyimg img{
+  width: 435px;
+height: 300px;
+position: relative;
+top:-335px;
+left: 10px;
+}
+.sec03Companytext{
+  color:  #2c1310da;
+  margin-top: 50px;
+
+}
+.sec03Companytext h1{
+  font-size: 2rem;
+  padding: 20px;
+}
+.sec03Companytext p{
+  line-height: 35px;
+}
+.sec03Companytext{
+  width: 100%;
+  height: 300px;
+  position: relative;
+  top: 20px;
+  left: 419px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* footer */
+footer {
+background: url(/imges/Hershys/footer-bg.jpg) no-repeat;
+
+  font-size: 1rem;
+  font-weight: 300;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  background-color: #33100c;
+  background-size: cover;
+  color:#FCFBFB
+}
+
+
+address {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  text-emphasis: none;
+  font-size: 1rem;
+  color: #FCFBFB
+
+}
+
+.company,
+address {
+  margin: 43px 50px 0 100px;
+}
+
+.sns{
+  display: flex;
+}
+.sns img {
+  width: 24px;
+  height: 24px;
+  margin: 9px 3px 6px 7px;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+ 
+.sec03 a {text-decoration:none;
+}
+ 
+	.imglist_ul {
+    font-size:0;
+    width:1000px;
+    margin:0 auto;
+    padding:10px;
+  }
+	.imglist_ul > li {
+    display:inline-block;
+    width: 32%;
+    vertical-align: top;
+    font-size: 12px;
+    margin: 0px 7px 32px 3px;
+}
+  
+	.sec03 > a {
+    display:block;
+    width:auto;
+    color:#333;
+    margin:5px 5px 10px 5px;
+  }
+a .screen {
+    position:relative;
+    overflow:hidden;
+    padding-bottom:56.25%;
+  }
+ a .screen img {
+    position:absolute;
+    top:50%;left:50%;
+    transform:translate(-50%,-50%);
+    width:100%;z-index:1;
+  }
+ a .screen span {
+    display:block;
+    position:absolute;
+    transition:all .4s;
+    background: #523321;
+    z-index:2;
+    -webkit-transition:all .4s;
+    -moz-transition:all .4s;
+    -ms-transition:all .4s;
+    -o-transition:all .4s;
+}
+	a .screen span:nth-child(1) {top:0;height:5px;width:0;}
+	a .screen span:nth-child(2) {top:0;right:0;width:5px;height:0;}
+	a .screen span:nth-child(3) {bottom:0;right:0;height:5px;width:0;}
+	a .screen span:nth-child(4) {bottom:0;left:0;width:5px;height:0;}
+	a:hover .screen span:nth-child(1) {width:100%;}
+	a:hover .screen span:nth-child(2) {height:100%;transition-delay:.1s;}
+	a:hover .screen span:nth-child(3) {width:100%;transition-delay:.2s;}
+	a:hover .screen span:nth-child(4) {height:100%;transition-delay:.3s;}
+	a h3 {
+    margin:20px 10px;
+    font-size:25px;
+    text-align: center;
+  }
+
+      
+    
+
+  a#TOP {
+    font-style: normal;
+    position: fixed;
+    right: 2%;
+    bottom: 45px;
+    display: none;
+    z-index: 999;
+    color: rgb(241, 232, 223);
+    font-size: 0.9rem;
+    width: 30px;
+    height: 30px;
+  }
