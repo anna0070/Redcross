@@ -69,7 +69,7 @@ header .top .inner {
 header .top .inner .logo {
     width: 220px;
     height: 54px;
-    background: url("/imges/redcross/logo.gif") 0 0 no-repeat;
+    background: url("../imges/redcross/logo.gif") 0 0 no-repeat;
     background-size: contain;
 }
 
@@ -95,7 +95,7 @@ header .top .inner .gnb span {
 header {
     width: 100%;
     height: 200px;
-    background: url(/imges/redcross/top011.png) no-repeat;
+    background: url(../imges/redcross/top011.png) no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -153,7 +153,7 @@ header .top:hover {
 }
 
 header .top:hover .inner .logo {
-    background: url("/imges/redcross/logo.gif") no-repeat;
+    background: url("../imges/redcross/logo.gif") no-repeat;
     background-size: contain;
     position: relative;
     z-index: 10;
@@ -318,20 +318,20 @@ header > .top > .inner > .mgnb {
 }
 
 .img01 {
-    background: url(/imges/redcross/redpc.png) no-repeat;
+    background: url(../imges/redcross/redpc.png) no-repeat;
     width: 100%;
     height: 100%;
     background-size: cover;
 }
 
 .img02 {
-    background: url(/imges/redcross/mv_pc_banner0616_02.jpg) no-repeat;
+    background: url(../imges/redcross/mv_pc_banner0616_02.jpg) no-repeat;
     width: 100%;
     background-size: cover;
 }
 
 .img03 {
-    background: url(/imges/redcross/mv_pc_banner1207_04.jpg) no-repeat;
+    background: url(../imges/redcross/mv_pc_banner1207_04.jpg) no-repeat;
     width: 100%;
     background-size: cover;
 }
@@ -623,7 +623,7 @@ header > .top > .inner > .mgnb {
 }
 
 .logo_01 {
-    background: url(/imges/redcross/nav.png)no-repeat;
+    background: url(../imges/redcross/nav.png)no-repeat;
     width: 178px;
     height: 184px;
     background-size: contain;
@@ -660,7 +660,7 @@ header > .top > .inner > .mgnb {
 }
 
 .sns01 {
-    background: url(/imges/redcross/적십자소식02.jpg) no-repeat;
+    background: url(../imges/redcross/적십자소식02.jpg) no-repeat;
     background-size: cover;
     width: 100%;
     height: 230px;
@@ -669,7 +669,7 @@ header > .top > .inner > .mgnb {
 }
 
 .sns02 {
-    background: url(/imges/redcross/적십자소식01.jpg) no-repeat;
+    background: url(../imges/redcross/적십자소식01.jpg) no-repeat;
     background-size: cover;
     width: 100%;
     height: 230px;
@@ -678,7 +678,7 @@ header > .top > .inner > .mgnb {
 }
 
 .sns03 {
-    background: url(/imges/redcross/적십자소식03.jpg) no-repeat;
+    background: url(../imges/redcross/적십자소식03.jpg) no-repeat;
     background-size: cover;
     width: 100%;
     height: 230px;
@@ -748,20 +748,20 @@ header > .top > .inner > .mgnb {
     --swiper-theme-color: rgb(110, 100, 90);
 }
 .s01 {
-    background: url(/imges/redcross/banner03.png) no-repeat;
+    background: url(../imges/redcross/banner03.png) no-repeat;
     background-size: cover;
 }
 .s02 {
-    background: url(/imges/redcross/banner.03.jpg) no-repeat;
+    background: url(../imges/redcross/banner.03.jpg) no-repeat;
     background-size: cover;
 }
 .s03 {
-    background: url(/imges/redcross/banner.01.jpg) no-repeat;
+    background: url(../imges/redcross/banner.01.jpg) no-repeat;
     background-size: cover;
 }
 
  .s04 {
-    background: url(/imges/redcross/banner.04.jpg) no-repeat;
+    background: url(../imges/redcross/banner.04.jpg) no-repeat;
     background-size: cover;
 }
 /* 추후이벤트 */
@@ -770,7 +770,7 @@ header > .top > .inner > .mgnb {
     background-size: cover; }*/
 
 .right_sns_img {
-    background: url(/imges/redcross/banner_area_img220601_01.png) no-repeat;
+    background: url(../imges/redcross/banner_area_img220601_01.png) no-repeat;
     background-size: cover;
     width: 307px;
     height: 300px;
@@ -826,7 +826,7 @@ footer .inner {
 .footerlogo {
     width: 230px;
     height: 78px;
-    background: url(../../imges/redcross/footerlogo.png) 50% 50% no-repeat;
+    background: url(../imges/redcross/footerlogo.png) 50% 50% no-repeat;
     background-size: contain;
 }
 

@@ -204,7 +204,7 @@ li {
 }
 
 .top_logo {
-  background-image: url(/imges/Hershys/toplogo.png);
+  background-image: url(../imges/Hershys/toplogo.png);
   background-repeat: no-repeat;
   background-position: center;
   width: 234px;

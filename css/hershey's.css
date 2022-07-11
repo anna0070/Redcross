@@ -241,7 +241,7 @@ body {
 }
 
 .top_logo {
-  background-image: url(/imges/Hershys/toplogo.png);
+  background-image: url(../imges/Hershys/toplogo.png);
   background-repeat: no-repeat;
   background-position: center;
   width: 234px;
@@ -331,7 +331,7 @@ background-color: #33100c;
 
 .story01 {
     /* background: url("/imges/Hershys/hershey_ai.png") no-repeat; */
-    background: url(/imges/Hershys/milton.png);
+    background: url(../imges/Hershys/milton.png);
      background-repeat: no-repeat;
     background-size: 360px 300px;
     width: 320px;
@@ -346,7 +346,7 @@ background-color: #33100c;
 
 
  .story02 {
-    background: url(/imges/Hershys/histry02.png);
+    background: url(../imges/Hershys/histry02.png);
     background-repeat: no-repeat;
     background-size: 360px 300px;
     width: 320px;
@@ -355,7 +355,7 @@ background-color: #33100c;
 }
 
 .story03 {
-    background: url(/imges/Hershys/historylogo.png);
+    background: url(../imges/Hershys/historylogo.png);
     background-repeat: no-repeat;
     background-size: 360px 300px;
     width: 320px;
@@ -380,7 +380,7 @@ background-color: #33100c;
 /* background 이미지 01*/
 .brand_photo {
 
-  background: url(/imges/Hershys/hersheysbackground02.png) no-repeat;
+  background: url(../imges/Hershys/hersheysbackground02.png) no-repeat;
   background-size: cover;
   background-attachment: fixed;
   -webkit-background-size: cover;
@@ -398,7 +398,7 @@ background-color: #33100c;
 
 .backgroundimg {
 
-  background: url(/imges/Hershys/sustainability-cocoa-person-holding-cocoa-pod.jpg) no-repeat;
+  background: url(..imges/Hershys/sustainability-cocoa-person-holding-cocoa-pod.jpg) no-repeat;
   background-size: cover;
   background-attachment: fixed;
   /* -webkit-background-size: cover; */
@@ -416,7 +416,7 @@ background-color: #33100c;
 
 .recipes_photo {
 
-  background: url(/imges/Hershys/hersheysbackground01.png) no-repeat;
+  background: url(../imges/Hershys/hersheysbackground01.png) no-repeat;
 
   background-size: cover;
   background-attachment: fixed;
@@ -484,7 +484,7 @@ brand */
 }
 
 .logo_01 {
-  background: url(/imges/Hershys/whitelogo\ 1.png);
+  background: url(../imges/Hershys/whitelogo\ 1.png);
   background-repeat: no-repeat;
   width: 38%;
   height: 170px;

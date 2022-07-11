@@ -43,9 +43,8 @@ body{
    .recipestext08{
     margin: 5px 3px 5px 3px;
    }
-   .recipes a
-   {
-    margin: 0 0 0 0px;}
+ 
+   
     footer {
         flex-direction: column;
         height: 100%;
@@ -54,7 +53,5 @@ body{
     .company, address {
         font-size: 0.8rem;
         margin: 35px 0px 0 11px;
-    padding: 0 0 0 0 ;}
-    address{
-        margin: 0 0 0 0px;
     }
+   

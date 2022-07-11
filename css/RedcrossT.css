@@ -86,15 +86,15 @@ header > .top > .inner > .mgnb.on {
     height: 400px;
 }
 .img01 {
-    background: url(/imges/redcross/redmt.png) 50% 50% no-repeat;
+    background: url(../imges/redcross/redmt.png) 50% 50% no-repeat;
     background-size: contain;
 }
 .img02 {
-    background: url(/imges/redcross/mv_mb_banner0517_01.jpg) 50% 50% no-repeat;
+    background: url(../imges/redcross/mv_mb_banner0517_01.jpg) 50% 50% no-repeat;
     background-size: contain;
 }
 .img03 {
-    background: url(/imges/redcross/mv_mb_banner1207_01.jpg) 50% 50% no-repeat;
+    background: url(../imges/redcross/mv_mb_banner1207_01.jpg) 50% 50% no-repeat;
     background-size: contain;
 }
 /* .img04 {

@@ -17,7 +17,7 @@
 body {
   overflow-X: hidden;
   font-family: 'Noto Sans KR', sans-serif;
-  background: url(/imges/Hershys/kiss_pattern_a-munsell_transparent001.png);
+  background: url(../imges/Hershys/kiss_pattern_a-munsell_transparent001.png);
 
 }
 
@@ -203,7 +203,7 @@ li {
 }
 
 .top_logo {
-  background-image: url(/imges/Hershys/toplogo.png);
+  background-image: url(../imges/Hershys/toplogo.png);
   background-repeat: no-repeat;
   background-position: center;
   width: 234px;
@@ -258,7 +258,7 @@ li {
 }
 
 footer {
-  background: url(/imges/Hershys/footer-bg.jpg) no-repeat;
+  background: url(../imges/Hershys/footer-bg.jpg) no-repeat;
 
   font-size: 1rem;
   font-weight: 300;
