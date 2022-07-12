@@ -115,15 +115,7 @@ li {
   height: 17px;
   line-height: 17px;
 }
-/* 메뉴옆화살표 */
-.dropdown .nav-link::after {
-  content: "";
-  position: absolute;
-  top: 6px;
-  right: 0;
-  border: 5px solid transparent;
-  border-top-color: #310e0a;
-}
+
 
 .submenu {
   position: absolute;
