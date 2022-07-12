@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+body {
+    min-width: 320px;
+
+}
+/* /////////// */
+p{
+    font-size: 0.8rem;
+}
+.nav-link, .nav-link:link, .nav-link:visited, .nav-link:active {
+    font-size: 0.8rem;
+}
+.event h1{
+    font-size: 0.8rem;
+    top: 303px;
+    left: 58px;
+}
+.nav-item {
+    display: inline-block;
+    margin-right: 1px;}
+/* //////////////////////////////////// */
+.company, address {
+    margin: 8px 0px 0 5px;
+}
+footer {
+    height: 375px;
+    flex-direction: column;
+}
+address{
+    font-size: 0.8rem;
+}

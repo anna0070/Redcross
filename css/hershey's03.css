@@ -1,0 +1,251 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&family=PT+Serif&family=Scheherazade+New&display=swap');
+
+/* 구글폰트 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+a:link,
+a:visited {
+    color: #33100c;
+    text-decoration: none
+}
+
+a:hover {
+    color: #9c1101;
+}
+
+a:active {
+    color: #33100c
+}
+
+li {
+    list-style-type: none;
+}
+
+
+/* Top */
+/* Navigation */
+
+.nav {
+    width: 100%;
+    margin: 0px 0 10px 0px;
+    text-align: center;
+}
+
+.nav-items {
+    padding: 0;
+    list-style: none;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+.nav-link,
+.nav-link:link,
+.nav-link:visited,
+.nav-link:active,
+.submenu-link,
+.submenu-link:link,
+.submenu-link:visited,
+.submenu-link:active {
+    display: block;
+    position: relative;
+    font-size: 22px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: rgb(126, 70, 70);
+}
+
+.nav-link,
+.nav-link:link,
+.nav-link:visited,
+.nav-link:active {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+/* 메뉴아래 줄 */
+.nav-link::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: rgba(53, 10, 10, 0.856);
+    opacity: 0;
+    -webkit-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::before {
+    opacity: 1;
+    -webkit-transform: translate(0, 5px);
+    transform: translate(0, 5px);
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown .nav-link {
+    
+    height: 17px;
+    line-height: 17px;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    z-index: 100;
+    width: 200px;
+    margin-left: -100px;
+    background: #fff2f2be;
+    border-radius: 3px;
+    line-height: 1.46667;
+    margin-top: -5px;
+    box-shadow: 0 0 8px rgba(97, 31, 31, 0.747);
+    opacity: 0;
+    -webkit-transform: translate(0, 0) scale(0.85);
+    transform: translate(0, 0) scale(0.85);
+    transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+    pointer-events: none;
+
+
+}
+
+.submenu::after,
+.submenu::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border: 10px solid transparent;
+    height: 0;
+
+}
+
+.submenu::after {
+    border-bottom-color: #fff2f2be;
+
+}
+
+.submenu::before {
+    margin-left: -13px;
+    border: 13px solid transparent;
+    border-bottom-color: #a38784;
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+
+}
+
+.submenu-items {
+    list-style: none;
+}
+
+.submenu-item {
+    display: block;
+    text-align: left;
+}
+
+.submenu-link,
+.submenu-link:link,
+.submenu-link:visited,
+.submenu-link:active {
+    color: #502e28;
+    padding: 4px 20px;
+}
+
+.submenu-link:hover {
+    text-decoration: underline;
+}
+
+.submenu-seperator {
+    height: 0;
+    margin: 12px 10px;
+    border-top: 1px solid rgb(41, 39, 39);
+}
+
+.show-submenu .submenu {
+    opacity: 1;
+    -webkit-transform: translate(0, 25px) scale(1);
+    transform: translate(0, 25px) scale(1);
+    pointer-events: auto;
+}
+
+.top_logo {
+    background-image: url(../imges/Hershys/toplogo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 234px;
+    height: 109px;
+    margin: auto;
+
+
+}
+
+.eventimg {
+    background: url("../imges/Hershys/HP_1x3_ColoredKiss.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+
+}
+
+.event h1 {
+    color: rgba(43, 14, 14, 0.897);
+    font-size: 1.5rem;
+    position: absolute;
+    top: 460px;
+    left: 800px;
+}
+
+
+footer {
+
+    font-size: 1rem;
+    font-weight: 300;
+    display: flex;
+    width: 100%;
+    height: 270px;
+    justify-content: space-between;
+    background-color: #a38373be;
+    background-size: cover;
+    color: #fff;
+
+    font: 600;
+
+}
+
+address {
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    text-emphasis: none;
+    font-size: 1rem;
+    color: #33100c;
+
+}
+
+.company,
+address {
+    margin: 20px 20px 0 20px;
+}
+

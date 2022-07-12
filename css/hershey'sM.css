@@ -5,28 +5,24 @@
 /* Top */
 
 body {
-background-color: white;
+    background-color: white;
     min-width: 320px;
 }
 
-
-
-
 .nav-items span {
     font-size: 0.9rem;
-   max-width: 0 auto;
-};
-
+    max-width: 0 auto;
+}
 .recipes_photo,
 .brand_photo {
     display: none;
 }
 
 .left_history {
-   
-     height: 0;
+
+    height: 0;
 }
-     
+
 .left_history p {
     font-size: 1rem;
     margin: 18px 10px -5px 10px;
@@ -42,9 +38,11 @@ background-color: white;
     height: 64px;
     margin: 5px 25px 0px 0px;
 }
+
 .left_history span {
     margin: 0 0 25px 0px;
     font-size: 1.8rem;
+    color: #898686d9
 }
 
 .menu-icon .menu-sticks {
@@ -65,31 +63,36 @@ background-color: white;
 .menu-check:checked~.menu {
     max-width: 72px;
 }
+.box01 {flex-direction: column;
 
+}
 .sec01 {
 
     width: 100%;
-    height:100%;
+    height: 100%;
     background-color: #33100c;
 }
 
-.left_history{
+.left_history {
     width: 100%;
-    background-color: #33100c;
+    background-color: #33100c41;
     height: 270px;
-position: relative;
-top: -98px;
-padding: 5px;
- 
+    position: relative;
+    top: -13px;
+    padding: 25px;
+
 }
+
 .story01,
 .story02,
-.story03{
-margin: 20px;
+.story03 {
+    margin: 20px;
 }
-.box01{
+
+.box01 {
     height: 150px;
 }
+
 video {
     width: 100vw;
     height: 100vw;
@@ -99,11 +102,13 @@ video {
     left: 0;
     z-index: -1;
 }
+
 .nav-item {
     display: inline-block;
     margin-right: 0;
 }
-.nav{
+
+.nav {
     text-align: none;
 }
 
@@ -111,11 +116,12 @@ video {
 .story01,
 .story02,
 .story03 {
-   
+
     margin-top: 95px;
 
 }
-.sec02{
+
+.sec02 {
     height: 259px;
     margin: 0 auto;
 }
@@ -135,7 +141,7 @@ video {
 
 .brand_photo,
 .backgroundimg,
-.recipes_photo{
+.recipes_photo {
     display: none;
 }
 
@@ -147,13 +153,15 @@ video {
 
 
 .grid-recipe {
-    margin: 65px 75px 0px 75px;}
-    
+    margin: 103px 75px 0px 75px;
+}
+
 .recipetitle {
     font-size: 1.8rem;
     font-weight: 700;
     margin: 0px 5px -73px 0px;
 }
+
 .slider .slide-track {
     animation: scroll 40s linear infinite;
     display: flex;
@@ -161,6 +169,7 @@ video {
     flex-wrap: nowrap;
     justify-content: space-evenly;
 }
+
 footer {
     font-size: 0.8rem;
     flex-direction: column;
@@ -171,10 +180,52 @@ address {
     font-size: 0.8rem;
 }
 
-.iconmouse img{
+.iconmouse img {
     display: none;
 }
 
-.sec03{
+.sec03 {
     height: 470px;
 }
+.story01 {
+    background: url(../imges/Hershys/milton.png) 50% 50% no-repeat;
+    background-size: 227px 183px;
+    width: 215px;
+    height: 215px;
+    margin: 75px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+.story02 {
+    background: url(../imges/Hershys/milton.png) 50% 50% no-repeat;
+    background-size: 227px 183px;
+    width: 215px;
+    height: 215px;
+    margin: 75px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+.story03 {
+    background: url(../imges/Hershys/milton.png) 50% 50% no-repeat;
+    background-size: 227px 183px;
+    width: 215px;
+    height: 215px;
+    margin: 75px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+.box02 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #33100c;
+    width: 100%;
+    height: 1097px;
+    flex-direction: column;
+    align-items: center;}

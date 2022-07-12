@@ -2,19 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&family=PT+Serif&family=Scheherazade+New&display=swap');
 /* 구글폰트 */
-@import url('https://fonts.googleapis.com/css2?family=Material+Icons');
-@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
-
-/* 구글아이콘 */
-
-
-
 
 * {
-
-  
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
   /* outline: 1px solid rgb(238, 2, 2); */
@@ -23,8 +12,6 @@
 body {
   overflow-X: hidden;
   font-family: 'Noto Sans KR', sans-serif;
-  
-
 }
 
 a:link,
@@ -117,7 +104,7 @@ li {
 }
 
 .dropdown .nav-link {
-  padding-right: 15px;
+  
   height: 17px;
   line-height: 17px;
 }

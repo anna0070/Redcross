@@ -1,0 +1,19 @@
+@charset "utf-8";
+* {
+    padding: 0;
+    margin: 0;
+    /* outline: 1px solid rgb(238, 2, 2); */
+  }
+  
+body {
+    min-width: 768px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.eventimg {
+    background: url(../imges/Hershys/HP_1x3_ColoredKiss.jpg) 50% no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 590px;}
+footer {
+    height: 296px;
+}

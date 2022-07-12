@@ -1,0 +1,54 @@
+@charset "utf-8";
+* {
+    padding: 0;
+    margin: 0;
+    /* outline: 1px solid rgb(238, 2, 2); */
+  }
+  
+body {
+    min-width: 768px;
+    overflow-X: hidden;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.sec01img01 {
+    background-size: contain;
+    margin-top: 50px;
+}
+.sec01 {
+    flex-direction: column;
+}
+.sec01text {
+    width: 90%;
+    height: 488px;
+    margin: 0px 30px 84px 30px;
+}
+.hersheysdata01 .box-right {
+    width: 30%;
+    float: left;
+    position: relative;
+    padding-left: 90px;
+}
+.sec02{
+height: 1740px;
+}
+.hersheysdata01 .history-list ul li {
+margin-bottom: 12px;
+}
+.sectext {
+    left: 144px;
+} 
+.sec03Companytext {
+    top: -40px;
+    left: 1px;
+    align-items: center;
+  
+}
+.sec03Companytext p {
+    line-height: 30px;
+   
+}
+.imglist_ul{
+ width: 750px;
+}
+
