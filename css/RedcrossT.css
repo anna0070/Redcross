@@ -153,6 +153,23 @@ video {
     margin: 50px 0 0 0px;
     flex-direction: column;
 }
+.s01 {
+    background: url(../imges/redcross/banner03.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.s02 {
+    background: url(../imges/redcross/banner.03.jpg) 50% 50% no-repeat;
+    background-size: contain;
+}
+.s03 {
+    background: url(../imges/redcross/banner.01.jpg) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+ .s04 {
+    background: url(../imges/redcross/banner.04.jpg) 50% 50% no-repeat;
+    background-size: contain;
+}
 .sns {
     flex-direction: column;
     align-items: center

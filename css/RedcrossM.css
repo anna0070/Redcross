@@ -16,6 +16,15 @@ body {
     box-sizing: border-box;
 }
 
+.menu01 a>p {
+    font-size: 0.9rem;
+    margin: 15px 13px 6px 13px;
+}
+
+.menu01 a>p {
+    font-size: 0.8rem;
+}
+
 header .top .inner {
     max-width: 320px;
     height: 100px;
@@ -26,20 +35,22 @@ header .top .inner {
 
 .title_1 {
     color: rgb(110, 100, 90);
-    margin-bottom: 22px;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
-.menu01 a>p {
-    font-size: 0.8rem;
-
-}
 
 header .top .inner .logo {
     width: 158px;
     height: 56px;
 }
 
+.sec02 .menu01>a {
+    margin: auto;
+}
+
+.icon08::after {
+    padding: 0px 18px 0px 24px;
+}
 
 .icon01::after,
 .icon02::after,
@@ -49,7 +60,7 @@ header .top .inner .logo {
 .icon06::after,
 .icon07::after,
 .icon08::after {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 video {
@@ -57,7 +68,31 @@ video {
     height: 200px;
 }
 
+.tabmenu label {
+    padding: 5px 0px;
+    width: 58px;
+    font-size: 0.8px;
+}
 
+.tabmenu>div {
+    width: 320px;
+}
+
+.sec04 h2 {
+    padding: 15px;
+    font-size: 1.5rem;
+}
+
+.bloodimg h2 {
+    font-size: 0.8rem;
+}
+
+#counter1,
+#counter2,
+#counter3,
+#counter4 {
+    font-size: 1rem;
+}
 
 .downloadimg {
     display: none;
@@ -77,12 +112,29 @@ video {
     position: relative;
     display: flex;
     width: 16%;
-} 
+}
 
+.sec02 .menu {
+    margin: 0 auto;
+}
+
+.sec02 {
+    margin-top: 60px;
+    display: flex;
+    padding-left: 10px;
+    flex-direction: row;
+    align-items: center;
+}
+.redconnecttext h1 {font-size: 1rem;}
+.redconnecttext span {font-size: 0.8rem;}
+.redconnecttext h3 {font-size: 0.9rem;}
+    
+    
 .sec03 {
     flex-direction: column;
     height: 535px;
 }
+
 
 .tabmenu label {
     display: inline-block;
@@ -106,64 +158,64 @@ footer {
     font-size: 0.7rem;
 }
 
-.web {
-    left: 0px;
-}
 
- footer {
-    font-size: 0.8rem; 
-    font-weight: 400; 
-     width: 100%;
+footer {
+    font-size: 0.8rem;
+    font-weight: 400;
+    width: 100%;
     height: 500px;
-} 
+}
 
 footer .box {
     display: flex;
     flex-direction: column;
-
-} 
-
-
- .icon07::after {
-    padding: 0 13px 0 0px;
-} 
- .icon08::after {
-    padding: 0px 26px 0px 24px;
+    height: 20px;
 }
-#cont1 ul > li a,
-#cont2 ul > li a,
-#cont3 ul > li a,
-#cont4 ul > li a {
+
+#cont1 ul>li a,
+#cont2 ul>li a,
+#cont3 ul>li a,
+#cont4 ul>li a {
     font-size: 0.7rem;
     padding: 10px;
 }
-.tabmenu label {
+
+.downloadbox {
+    border: none;
+    font-size: 0.7rem;
+}
+
+.footerlist {
+    margin: 3px 0 0 29px;
+}
+
+.footerinner {
     font-size: 0.8rem;
 }
-.downloadbox { 
- border: none;
-font-size: 0.7rem;
-}
-.footerlist {
-    margin: 11px 0 0 70px;
-}   
-.footerinner{
-    font-size: 0.8rem; 
-}
-.footerinner01:first-child a::after{
+
+.footerinner01:first-child a::after {
     display: none;
 }
-.footerinner01{
+
+.footerinner01 {
     display: flex;
     flex-direction: column;
-   
+
 }
- .grid-recipe {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(196px, 1fr));
-        grid-gap: 1em;
-        margin: 65px 58px 0px 30px;
-        justify-items: center;
-    justify-items: center;}
-    .grid-recipe {
-        margin: 87px 50px 0px 50px;}
+
+.grid-recipe {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(196px, 1fr));
+    grid-gap: 1em;
+    margin: 65px 58px 0px 30px;
+    justify-items: center;
+    justify-items: center;
+}
+
+.grid-recipe {
+    margin: 87px 50px 0px 50px;
+}
+
+.web {
+    left: 0px;
+}

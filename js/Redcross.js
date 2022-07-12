@@ -44,8 +44,8 @@ numberCounter.prototype.counter = function () {
 
 new numberCounter("counter4", 98);
 new numberCounter("counter3", 97);
-new numberCounter("counter2", 95);
-new numberCounter("counter1", 85);
+new numberCounter("counter2", 85);
+new numberCounter("counter1", 81);
 
 // 텝
 $(document).ready(function () {
