@@ -322,36 +322,31 @@ background-color: #33100c;
 
 .story01 {
     /* background: url("/imges/Hershys/hershey_ai.png") no-repeat; */
-    background: url(../imges/Hershys/milton.png);
-     background-repeat: no-repeat;
-    background-size: 360px 300px;
-    width: 320px;
-    height: 330px;
-    margin: 75px;
-    position: relative;
-    top:0px;
-    left: 0px;
-    z-index: 1; 
+    background: url(../imges/Hershys/living-the-bannerimage.jpeg) 50% 50% no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 285px;
+    margin: 115px 60px 0 60px;
+ 
+   
 }
 
 
 
  .story02 {
-    background: url(../imges/Hershys/histry02.png);
-    background-repeat: no-repeat;
-    background-size: 360px 300px;
-    width: 320px;
-    height: 330px;
-    margin: 75px;
-}
+    background: url(../imges/Hershys/sustainability-shared.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 285px;
+    margin: 115px 60px 0 60px;
+ }
 
 .story03 {
-    background: url(../imges/Hershys/historylogo.png);
-    background-repeat: no-repeat;
-    background-size: 360px 300px;
-    width: 320px;
-    height: 330px;
-    margin: 75px;
+    background: url(../imges/Hershys/CategoryDropdown_Gifts_WL.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 285px;
+    margin: 115px 60px 0 60px;
 } 
 
 
@@ -363,7 +358,7 @@ background-color: #33100c;
 
 .box2_01 span {
   font-size: 1.5rem;
-  margin-top: -50px;
+  margin-top: 33px;
 }
 
 
@@ -389,7 +384,7 @@ background-color: #33100c;
 
 .backgroundimg {
 
-  background: url(..imges/Hershys/sustainability-cocoa-person-holding-cocoa-pod.jpg) no-repeat;
+  background: url(../imges/Hershys/sustainability-cocoa-person-holding-cocoa-pod.jpg) no-repeat;
   background-size: cover;
   background-attachment: fixed;
   /* -webkit-background-size: cover; */

@@ -132,14 +132,28 @@ display: flex;}
   width: 120px;
   height: 50px;
 }
-
-/* SEC03 */
-
 .page{
   display: flex;
   justify-content: center;
   
 }
+
+/* SEC03 */
+.sec03.title{
+  background-color: #df8c867d;
+  background-size: cover;
+    font-size: 2rem;
+    color: #000;
+    padding-left: 5px;
+  
+}
+
+
+
+
+
+
+
 
 /* sec04 */
 .sec04 {
