@@ -31,6 +31,7 @@ a {
 h1{
     font-size: 2.5rem;
     font-family: Abril Fatface;
+  
 }
 :root {
     font-family: 'Noto Sans KR', sans-serif;
@@ -74,34 +75,39 @@ section:nth-of-type(4){background:#1d1c1c;}
   color: #000;
 }
 .sec02 span{
-  color: #8b0000;
-  font-size: 0.8rem;
+  color: #b40303;
+  font-size: 0.9rem;
 }
 .sec02.text{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 200px;
+    height: 405px;
 }
 .sec02.title{
   background-color: #df8c867d;
   background-size: cover;
-    font-size: 2rem;
-    color: #000;
-    padding-left: 5px;
-  
+  font-size: 2rem;
+  color: #000;
+  padding-left: 5px; 
 }
 .sec02.text02 p{ 
 font-size: 1rem;
 }
 .sec02.imgBox{
-display: flex;}
+display: flex;
+}
+.sec02.text01 p{
+  padding-left: 10px;
+}
+
+
 
 .sec02.innerimg{
     background: url(../imges/index/redpng.png) no-repeat;
     background-size: contain;
     width:970px;
-   height: 1000px;
+    height: 1000px;
 }
 .sec02.inner {
     display: flex;
@@ -117,17 +123,29 @@ display: flex;}
   flex-wrap: wrap;
   width: 350px;
   height: 600px;
+ 
 }
 .sec02.inner01 p{
   font-size: 1.1rem;
   color: #1d1c1c;
 }
 
+.sec02.text01{
+  border: 1px solid rgba(75, 35, 35, 0.5);
+  border-radius:15px;
+  margin-bottom: 5px;
+}
+.sec02.text{
+  padding: 5px;
+  border: 1px solid rgba(75, 35, 35, 0.5);
+  border-radius:15px;
+}
 .main {
   font-size: 1rem;
   text-align: center;
   margin:  66px 10px 0 10px;
   border: 1px solid rgba(75, 35, 35, 0.5);
+  border-radius:20px;
   padding: 12px 0 12px 0;
   width: 120px;
   height: 50px;
@@ -138,13 +156,20 @@ display: flex;}
   
 }
 
+.main:hover{
+  background-color: #df8c867d;
+  background-size: contain;
+}
+
+
+
 /* SEC03 */
 .sec03.title{
   background-color: #df8c867d;
   background-size: cover;
-    font-size: 2rem;
-    color: #000;
-    padding-left: 5px;
+  font-size: 2rem;
+  color: #000;
+  padding-left: 5px;
   
 }
 
