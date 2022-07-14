@@ -10,8 +10,8 @@ body {
 }
 
 .nav-items span {
-    font-size: 0.9rem;
-    max-width: 0 auto;
+    font-size: 0.8rem;
+   
 }
 .recipes_photo,
 .brand_photo {
@@ -24,7 +24,7 @@ body {
 }
 
 .left_history p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin: 18px 10px -5px 10px;
 }
 
@@ -78,7 +78,7 @@ body {
     background-color: #33100c41;
     height: 270px;
     position: relative;
-    top: -13px;
+    top: -180px;
     padding: 25px;
 
 }
@@ -90,7 +90,7 @@ body {
 }
 
 .box01 {
-    height: 150px;
+    height: 128px;
 }
 
 video {
@@ -111,8 +111,11 @@ video {
 .nav {
     text-align: none;
 }
-
-
+.logo_01{
+    display: none;
+}
+.slider {
+    top: 155px;}
 .story01,
 .story02,
 .story03 {
@@ -129,7 +132,7 @@ video {
 .logo_01 {
     width: 60%;
     height: 113px;
-    left: 25%;
+    left: 28%;
 }
 
 .recipetitle {
@@ -151,9 +154,12 @@ video {
     height: 100%;
 }
 
-
+.location-image a img {
+    width: 100%;
+    height: 180px;
+}
 .grid-recipe {
-    margin: 103px 75px 0px 75px;
+    margin: auto
 }
 
 .recipetitle {
@@ -187,42 +193,10 @@ address {
 .sec03 {
     height: 470px;
 }
-.story01 {
-    background: url(../imges/Hershys/milton.png) 50% 50% no-repeat;
-    background-size: 227px 183px;
-    width: 215px;
-    height: 215px;
-    margin: 75px;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    z-index: 1;
-}
-.story02 {
-    background: url(../imges/Hershys/milton.png) 50% 50% no-repeat;
-    background-size: 227px 183px;
-    width: 215px;
-    height: 215px;
-    margin: 75px;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    z-index: 1;
-}
-.story03 {
-    background: url(../imges/Hershys/milton.png) 50% 50% no-repeat;
-    background-size: 227px 183px;
-    width: 215px;
-    height: 215px;
-    margin: 75px;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    z-index: 1;
-}
+
 .box02 {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     background-color: #33100c;
     width: 100%;

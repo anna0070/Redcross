@@ -1,1 +1,0 @@
-document.querySelector('video').defaultPlaybackRate = 2.0;

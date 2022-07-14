@@ -2,11 +2,10 @@
 
 body {
     min-width: 320px;
- 
-        overflow-x: hidden;
-    
- 
-    }
+    overflow-x: hidden;
+
+
+}
 
 .img_responsive {
     width: 100%;
@@ -83,6 +82,7 @@ video {
 .tabmenu {
     overflow: visible;
 }
+
 .sec04 h2 {
     padding: 15px;
     font-size: 1.5rem;
@@ -130,11 +130,20 @@ video {
     flex-direction: row;
     align-items: center;
 }
-.redconnecttext h1 {font-size: 1rem;}
-.redconnecttext span {font-size: 0.8rem;}
-.redconnecttext h3 {font-size: 0.9rem;}
-    
-    
+
+.redconnecttext h1 {
+    font-size: 1rem;
+}
+
+.redconnecttext span {
+    font-size: 0.8rem;
+}
+
+.redconnecttext h3 {
+    font-size: 0.9rem;
+}
+
+
 .sec03 {
     flex-direction: column;
     height: 535px;
