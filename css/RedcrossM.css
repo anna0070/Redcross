@@ -2,7 +2,9 @@
 
 body {
     min-width: 320px;
-   
+ 
+        overflow-x: hidden;
+    
  
     }
 
@@ -78,6 +80,9 @@ video {
     width: 320px;
 }
 
+.tabmenu {
+    overflow: visible;
+}
 .sec04 h2 {
     padding: 15px;
     font-size: 1.5rem;
