@@ -31,11 +31,12 @@ a {
 }
 
 .sec01 h1 {
+writing-mode: vertical-rl;
+text-orientation: mixed;
+  color: #421010;
   padding: 80px 10px 0px 60px;
-  font-size: 12rem;
+  font-size: 5rem;
   font-family: Abril Fatface;
-
-
 
 }
 
@@ -53,10 +54,8 @@ a:visited {
   text-decoration: none
 }
 
-
-
 a:active {
-  color: #d1b6b3;
+  color: #421010;
 }
 
 section {
@@ -69,7 +68,7 @@ li {
 }
 
 section:nth-of-type(1) {
-  background: #5f514f;
+  background: #a79797
 }
 
 section:nth-of-type(2) {
@@ -84,19 +83,20 @@ section:nth-of-type(4) {
   background: #a79797;
 }
 
-
 /* sec02 */
 
 .sec02 h1 {
-  font-size: 3rem;
-  color: rgb(80, 69, 69);
+  font-size: 2rem;
+  color: #421010;
+  padding: 20px;
+  font-family: Abril Fatface;
 }
 .sec02.inner {
   display: flex; 
    justify-content: space-evenly;
   align-items: center;
-
   flex-direction: row; 
+ 
 }
 .sec02 span {
   color: #970b0b;
@@ -113,24 +113,24 @@ section:nth-of-type(4) {
 .sec02.innerimg {
   background: url(../imges/index/redall1.png) no-repeat;
   background-size: contain;
-  width: 580px;
-  height: 1000px;
+  width: 490px;
+  height: 910px;
 }
 
 .sec02.innerimg01 {
   background: url(../imges/index/redpng.png) no-repeat;
-  background-size: cover;
-  width: 255px;
-  height: 500px;
+  background-size:contain;
+  width: 164px;
+  height: 450px;
   position: relative;
   top: 516px;
-  right: 187px;
+  right: 116px;
 
 }
-
 .sec02{
-  line-height: 30px;
+  line-height: 28px;
 }
+
 
 .sec02.text p {
   font-size: 1.1rem;
@@ -140,13 +140,16 @@ section:nth-of-type(4) {
 .main {
   font-size: 1rem;
   text-align: center;
-  margin: 20px 10px 0 10px;
+  margin: 38px 10px 0 10px;
   border: 1px solid #5f514f;
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 12px 0 12px 0;
   width: 120px;
   height: 50px;
-
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 
 .page {
@@ -161,35 +164,34 @@ section:nth-of-type(4) {
 
 }
 
-
 /* SEC03 */
 section.sec03{
-  background: url(../imges/index/hslogo.png) no-repeat;
-  background-size:cover;
-
- height: 1100px;
+  background: url(../imges/index/hssec033.png) no-repeat;
+  background-size: cover;
+ height: 1000px;
   overflow: hidden;
 
 }
 .sec03 h1 {
-  font-size: 3rem;
-  color: rgb(80, 69, 69);
+  font-size: 2rem;
+  color: #421010;
+  padding: 20px;
+  font-family: Abril Fatface;
 }
 .sec03.inner {
   display: flex; 
   justify-content: space-evenly;
   align-items: center;
-  flex-direction: row;
- 
+  flex-direction: row-reverse;
 }
 .sec03 span {
-  color: #970b0b;
-  font-size: 1rem;
+  color: #360707;
+  font-size: 1.2rem;
 }
 .sec03.text{
   display: flex;
   width: 450px;
-  height: 405px;
+  height:300px;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
@@ -197,20 +199,20 @@ section.sec03{
 }
 
  .sec03.innerimg {
-  background: url(../imges/index/hsmain01.png) no-repeat;
+  background: url(../imges/index/hsmain0001.png) no-repeat;
   background-size: contain;
-  width: 580px;
-  height: 1000px;
+  width: 460px;
+  height: 910px;
 }
 
 .sec03.innerimg01 {
   background: url(../imges/index/hsm.png) no-repeat;
-  background-size: cover;
-  width: 255px;
-  height: 500px;
+  background-size: contain;
+  width: 175px;
+  height: 450px;
   position: relative;
-  top: 516px;
-  right: 187px;
+  top: 496px;
+  right: -420px;
 
 } 
 
@@ -230,18 +232,6 @@ section.sec03{
   background-size: contain;
 
 }
-
- 
-
-
-
-
-
-
-
-
-
-
 
 /* sec04 */
 .sec04 h1 {

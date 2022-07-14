@@ -132,88 +132,6 @@ body {
 }
 
 
-.submenu {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  z-index: 100;
-  width: 200px;
-  margin-left: -100px;
-  background: #fff2f2be;
-  border-radius: 3px;
-  line-height: 1.46667;
-  margin-top: -5px;
-  box-shadow: 0 0 8px rgba(97, 31, 31, 0.747);
-  opacity: 0;
-  -webkit-transform: translate(0, 0) scale(0.85);
-  transform: translate(0, 0) scale(0.85);
-  transition: transform 0.1s ease-out, opacity 0.1s ease-out;
-  pointer-events: none;
-
-
-}
-
-.submenu::after,
-.submenu::before {
-  content: "";
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -10px;
-  border: 10px solid transparent;
-  height: 0;
-
-}
-
-/* 삼각모양 */
-.submenu::after {
-  border-bottom-color: #fff2f2be;
-
-}
-
-.submenu::before {
-  margin-left: -13px;
-  border: 13px solid transparent;
-  border-bottom-color: #a38784;
-  -webkit-filter: blur(1px);
-  filter: blur(1px);
-
-}
-
-.submenu-items {
-  list-style: none;
-}
-
-.submenu-item {
-  display: block;
-  text-align: left;
-}
-
-.submenu-link,
-.submenu-link:link,
-.submenu-link:visited,
-.submenu-link:active {
-  color: #502e28;
-  padding: 4px 20px;
-}
-
-.submenu-link:hover {
-  text-decoration: underline;
-}
-
-.submenu-seperator {
-  height: 0;
-  margin: 12px 10px;
-  border-top: 1px solid rgb(41, 39, 39);
-}
-
-.show-submenu .submenu {
-  opacity: 1;
-  -webkit-transform: translate(0, 25px) scale(1);
-  transform: translate(0, 25px) scale(1);
-  pointer-events: auto;
-}
-
 
 
 
@@ -248,7 +166,7 @@ body {
 
 }
 
-.left_history {
+.history {
   width: 100%;
   height: 100%;
   display: flex;
@@ -271,7 +189,7 @@ body {
 }
 
 
-.left_history span {
+.history span {
   text-decoration: underline;
   color: #cccccc;
   font-weight: 600;
@@ -281,7 +199,7 @@ body {
   letter-spacing: -2px;
 }
 
-.left_history p {
+.history p {
   font-size: 1.3rem;
   letter-spacing: -1px;
   margin: 20px 0 20px 0px;
@@ -291,7 +209,7 @@ body {
 font: bold;
 }
 
-.left_history h1 {
+.history h1 {
   font-size: 2rem;
   color: #FCFBFB;
   margin: 45px 0 0 0px;
@@ -327,12 +245,8 @@ background-color: #33100c;
     width: 300px;
     height: 285px;
     margin: 115px 60px 0 60px;
- 
    
 }
-
-
-
  .story02 {
     background: url(../imges/Hershys/sustainability-shared.jpg) 50% 50% no-repeat;
     background-size: cover;
@@ -403,7 +317,6 @@ background-color: #33100c;
 .recipes_photo {
 
   background: url(../imges/Hershys/hersheysbackground01.png) no-repeat;
-
   background-size: cover;
   background-attachment: fixed;
   -webkit-background-size: cover;
@@ -416,7 +329,6 @@ background-color: #33100c;
   position: relative;
   background-blend-mode: multiply;
   background-color: #b4a39abe;
-
 
 }
 
@@ -478,7 +390,6 @@ brand */
   top: 50px;
   left: 46%;
 }
-
 
 /* sec04 */
 
