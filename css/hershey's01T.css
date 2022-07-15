@@ -3,64 +3,9 @@
 body {
     min-width: 768px;
 }
-
-.top_logo {
-    margin: 0 0 0 -27px;
-}
-
-.menu a {
-    font-size: 1.2rem;
-}
-
-.menu {
-    top: 61px;
-    width: 115px;
-}
-
-.sec {
-    margin: -48px 0px 0 -63px;
-}
-
-.recipes01,
-.recipes02,
-.recipes03,
-.recipes04,
-.recipes05,
-.recipes06,
-.recipes07,
-.recipes08 {
-    width: 249px;
-
-}
-
-.recipesmenu {
-    flex-direction: column;
-    margin: 48px 0 0px 90px;
-}
-
-.recipes01 {
-    margin: 8px 5px 5px 6px;
-}
-
-.recipestext01 .recipestext02,
-.recipestext03,
-.recipestext04,
-.recipestext05,
-.recipestext06,
-.recipestext07,
-.recipestext08 {
-    margin: 5px 3px 5px 3px;
-}
-
-
-footer {
-    flex-direction: column;
-    height: 100%;
-
-}
-
-.company,
-address {
-    font-size: 0.8rem;
-    margin: 35px 0px 0 11px;
-}
+.tabV {
+top: 30px;
+left: 5px;}
+.conBox h1 {
+    color: #a38373;
+    left: 293px;}

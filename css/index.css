@@ -163,7 +163,7 @@ section.sec02 .main {
 
 /* SEC03 */
 section.sec03 {
-  background: url(../imges/index/hssec033.png) no-repeat;
+  background: url(../imges/index/hssec00003.png) no-repeat;
   background-size: cover;
   width: 100%;
   height: 1089px;
@@ -241,7 +241,6 @@ section.sec03 .main  {
   padding: 12px 0 12px 0;
   width: 120px;
   height: 50px;
-  -webkit-border-radius: 15px;
 }
 
 /* sec04 */

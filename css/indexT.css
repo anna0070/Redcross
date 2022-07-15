@@ -3,5 +3,66 @@ body{
    
     min-width: 768px;
 }
-.sec01.text h1 {
-top: 456px;}
+.wrap {
+scroll-snap-type: none
+}
+
+.sec02.inner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+section.sec02 {
+    height: 130vh;
+}
+
+
+.sec02.innerimg {
+    position: relative;
+    top: 18px;
+    left: 65px;
+    width: 380px;
+    height: 655px;
+}
+.sec02.innerimg01 {
+    top: 344px;
+    right: 122px;
+}
+.sec02.text {
+    display: flex;
+    width: 620px;
+    height: 375px;}
+section.sec03 .main {
+margin: 0 auto;
+    }
+.sec03.innerimg {
+    position: relative;
+    top: 18px;
+    left: 65px;
+    width: 434px;
+    height: 778px;
+}
+.sec03.inner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.sec03.innerimg01 {
+    top: 344px;
+    right: 122px;
+}
+.sec03.text {
+    display: flex;
+    width: 595px;
+    height: 375px;}
+section.sec03 {
+height: 130vh;
+ }
+section.sec04 {
+height: 80vh;
+ }
+ .sec03.innerimg01 {
+    top: 430px;
+ }

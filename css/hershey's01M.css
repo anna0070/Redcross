@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+body {
+    min-width: 320px;
+}
+
+body {
+    min-width: 320px;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+.nav-item span {
+    font-size: 0.8rem;
+
+}
+
+.nav-item {
+    margin-right: -1px;
+}
+
+.sec01img01 {
+    width: 225px;
+    height: 304px;
+}
+
+.text01,
+.text02,
+.text03 h2 {
+    font-size: 0.8rem;
+}
+
+.conBox h1 {
+    color: #a38373;
+    left: 146px;
+}
+
+footer {
+    height: 573px;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+.text01 span{
+    font-size: 1.5rem;
+    position: relative;
+    top: 27px;
+    left: -159px;
+    
+}
