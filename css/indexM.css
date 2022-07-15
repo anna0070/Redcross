@@ -10,10 +10,10 @@ body {
 }
 
 .sec02 h1 {
-    padding: 50px;
+    padding: 122px;
 }
 .sec03 h1 {
-    padding: 50px;
+    padding: 122px;
 }
 
 .sec02.text {
@@ -22,7 +22,7 @@ body {
 }
 .sec03.text {
     width: 282px;
-    height: 447px;
+    height: 300px;
 }
 
 .sec02.innerimg {
@@ -39,22 +39,20 @@ body {
     height: 825px;
 }
 
-section:nth-of-type(1) {
-    min-width: 320px;
-}
+
 
 section.sec01 {
-    height: 53vh;
+    height: 100vh;
 }
 section.sec02 {
-    height: 180vh;
+    height: 230vh;
 }
 section.sec03 {
-    height: 180vh;
+    height: 250vh;
 }
 
 section.sec04 {
-    height: 53vh;
+    height: 15vh;
 }
 
 .sec02.innerimg01 {
@@ -74,8 +72,8 @@ section.sec02 .main {
 
 section.sec03 .main {
     position: relative;
-    top: 855px;
-    left: 81px;
+    top: 1038px;
+    left: -112px;
 }
 
 .page {    
@@ -103,4 +101,11 @@ section.sec03 .main {
     width: 95px;
     height: 50px;
     -webkit-border-radius: 250px;
+}
+.sec04 {
+flex-direction: row;
+font-size: 0.9rem;}
+.sec04 h1{
+    font-size: 1rem;
+    margin-right: 5px;
 }
