@@ -6,7 +6,17 @@ body{
 .wrap {
 scroll-snap-type: none
 }
+.sec01 h1{
+    font-size: 0.9rem;}
 
+section.sec01 .sec01img {
+    background-size: contain;
+    width: 750px;
+    height: 307px;
+    position: relative;
+    left: 67px;
+    top:158px;
+}
 .sec02.inner {
     display: flex;
     justify-content: space-evenly;
