@@ -30,13 +30,14 @@ a {
   text-decoration: none;
 }
 
+
 .sec01 h1 {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  color: #421010;
-  padding: 80px 10px 0px 60px;
-  font-size: 5rem;
-  font-family: Abril Fatface;
+    /* writing-mode: vertical-rl; */
+    text-orientation: mixed;
+    color: #421010;
+    padding: 70px 45px 0px 94px;
+    font-size: 3rem;
+    font-family: Abril Fatface;
 
 }
 
@@ -67,12 +68,12 @@ li {
   list-style-type: none;
 }
 
-section:nth-of-type(1) {
+/* section:nth-of-type(1) {
   background: #a79797
-}
+} */
 
 section:nth-of-type(2) {
-  background: #b7adadb8;
+  background: #f0eeee;
 }
 
 /* section:nth-of-type(3) {
@@ -80,7 +81,14 @@ section:nth-of-type(2) {
 } */
 
 section:nth-of-type(4) {
-  background: #a79797;
+  background: #58594D
+}
+
+section.sec01 .sec01img{
+  background: url(../imges/index/sec01.png) no-repeat;
+  background-size: cover;
+  width:100%;
+  height: 820px;
 }
 
 /* sec02 */
