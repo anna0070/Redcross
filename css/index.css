@@ -17,7 +17,7 @@ body {
   height: 100vh;
   overflow: hidden;
   font-family: 'Noto Sans KR', sans-serif;
- 
+
 }
 
 .wrap {
@@ -31,8 +31,8 @@ a {
 }
 
 .sec01 h1 {
-writing-mode: vertical-rl;
-text-orientation: mixed;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
   color: #421010;
   padding: 80px 10px 0px 60px;
   font-size: 5rem;
@@ -91,18 +91,21 @@ section:nth-of-type(4) {
   padding: 20px;
   font-family: Abril Fatface;
 }
+
 .sec02.inner {
-  display: flex; 
-   justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
-  flex-direction: row; 
- 
+  flex-direction: row;
+
 }
+
 .sec02 span {
   color: #970b0b;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
-.sec02.text{
+
+.sec02.text {
   display: flex;
   width: 450px;
   height: 405px;
@@ -119,7 +122,7 @@ section:nth-of-type(4) {
 
 .sec02.innerimg01 {
   background: url(../imges/index/redpng.png) no-repeat;
-  background-size:contain;
+  background-size: contain;
   width: 164px;
   height: 450px;
   position: relative;
@@ -127,7 +130,8 @@ section:nth-of-type(4) {
   right: 116px;
 
 }
-.sec02{
+
+.sec02 {
   line-height: 28px;
 }
 
@@ -135,21 +139,19 @@ section:nth-of-type(4) {
 .sec02.text p {
   font-size: 1.1rem;
   color: #1d1c1c;
-} 
+}
 
-.main {
+section.sec02 .main {
   font-size: 1rem;
   text-align: center;
-  margin: 38px 10px 0 10px;
+  margin: 36px 10px 0 10px;
   border: 1px solid #5f514f;
   border-radius: 15px;
   padding: 12px 0 12px 0;
   width: 120px;
   height: 50px;
   -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
+
 }
 
 .page {
@@ -158,47 +160,47 @@ section:nth-of-type(4) {
 
 }
 
-.main:hover {
-  background-color: #a7979766;
-  background-size: contain;
-
-}
 
 /* SEC03 */
-section.sec03{
+section.sec03 {
   background: url(../imges/index/hssec033.png) no-repeat;
   background-size: cover;
- height: 1000px;
+  width: 100%;
+  height: 1089px;
   overflow: hidden;
 
 }
+
 .sec03 h1 {
   font-size: 2rem;
   color: #421010;
   padding: 20px;
   font-family: Abril Fatface;
 }
+
 .sec03.inner {
-  display: flex; 
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row-reverse;
 }
+
 .sec03 span {
-  color: #360707;
+  color: #970b0b;
   font-size: 1.2rem;
 }
-.sec03.text{
+
+.sec03.text {
   display: flex;
   width: 450px;
-  height:300px;
+  height: 300px;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  
+
 }
 
- .sec03.innerimg {
+.sec03.innerimg {
   background: url(../imges/index/hsmain0001.png) no-repeat;
   background-size: contain;
   width: 460px;
@@ -214,44 +216,47 @@ section.sec03{
   top: 496px;
   right: -420px;
 
-} 
-
-.sec03{
-  line-height: 30px;
 }
 
-.sec02.text p {
+.sec03 {
+  line-height: 28px;
+}
+
+.sec03.text p {
   font-size: 1.1rem;
   color: #1d1c1c;
-} 
-
-
+}
 
 .main:hover {
   background-color: #a7979766;
   background-size: contain;
+}
 
+section.sec03 .main  {
+  font-size: 1rem;
+  text-align: center;
+  margin: 274px 84px 0 -133px;
+  border: 1px solid #5f514f;
+  border-radius: 15px;
+  padding: 12px 0 12px 0;
+  width: 120px;
+  height: 50px;
+  -webkit-border-radius: 15px;
 }
 
 /* sec04 */
 .sec04 h1 {
-  font-size: 5rem;
-
+  font-size: 3rem;
 }
-
 .sec04 {
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: nowrap;
+  justify-content: center;
+  flex-wrap: wrap;
   font-family: Abril Fatface;
   font-size: 2rem;
   color: #421010;
   margin: 0 auto;
-  align-items: center;
-  align-content: stretch;
+  align-content: center;
   flex-direction: column;
-}
-
-.Contact {
-  margin-top: -300px;
+ 
 }
