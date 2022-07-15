@@ -8,6 +8,12 @@ section.sec01 .sec01img {
     background-size: contain;
 
 }
+section.sec01 .sec01img {
+    width: 739px;
+    height: 160px;
+    left: -14px;
+    top: 148px;
+}
 .sec01 h1 {
     font-size: 1.5rem;
 }
@@ -20,11 +26,11 @@ section.sec01 .sec01img {
     width: 750px;
     height: 115px;}
 .sec02 h1 {
-    padding: 122px;
+    padding: 105px;
     font-size: 1.8rem;
 }
 .sec03 h1 {
-    padding: 122px;
+    padding: 105px;
     font-size: 1.8rem;
 }
 
@@ -65,26 +71,25 @@ section.sec04 {
 }
 .sec02.innerimg01 {
     top: 510px;
-    right: -3px;
+    right: -67px;
 }
 .sec03.innerimg01 {
     top: 546px;
-    right: 2px;
+    right: -61px;
 }
 
 section.sec02 .main {
     position: relative;
-    top: 1041px;
-    left: -124px;
-}
+    top: 1264px;
+    left: -246px;}
 
 section.sec03 .main {
     position: relative;
-    top: 1038px;
-    left: -112px;
+    top: 1254px;
+    left: -190px;
 }
 .page {    
- flex-direction: column;
+    flex-direction: row;
 }
 
 section.sec02 .main {
