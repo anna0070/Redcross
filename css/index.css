@@ -3,6 +3,8 @@
 /* Noto Sans KR 폰트 */
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 /* Abril+Fatface 폰트 */
+@import 'https://fonts.googleapis.com/css?family=Rubik+Mono+One';
+
 
 * {
   box-sizing: border-box;
@@ -26,20 +28,17 @@ body {
   scroll-snap-type: y mandatory;
 }
 
-a {
-  text-decoration: none;
-}
 
-
+/* 
 .sec01 h1 {
-    /* writing-mode: vertical-rl; */
+    writing-mode: vertical-rl;
     text-orientation: mixed;
     color: #421010;
     padding: 70px 45px 0px 94px;
     font-size: 3rem;
     font-family: Abril Fatface;
+} */
 
-}
 
 :root {
   font-family: 'Noto Sans KR', sans-serif;
@@ -50,7 +49,7 @@ a {
 
 a:link,
 a:visited {
-  color: #1d1c1c;
+  color: #ffffff;
   ;
   text-decoration: none
 }
@@ -72,9 +71,9 @@ li {
   background: #a79797
 } */
 
-section:nth-of-type(2) {
+/* section:nth-of-type(2) {
   background: #f0eeee;
-}
+} */
 
 /* section:nth-of-type(3) {
   background: #2c5a419d;
@@ -84,11 +83,84 @@ section:nth-of-type(4) {
   background: #58594D
 }
 
-section.sec01 .sec01img{
+/* section.sec01 .sec01img{
   background: url(../imges/index/sec01.png) no-repeat;
-  background-size: cover;
-  width:100%;
-  height: 820px;
+  background-size: contain;
+  width:900px;
+  height: 700px;
+} */
+
+.sec01 h1 {
+  display: none;
+
+}
+
+section.sec01 {
+  background: rgb(255, 255, 255);
+  overflow-x: hidden;
+  font-family: "Rubik Mono One", sans-serif;
+  padding: 400px;
+  text-align: center;
+
+}
+
+.words {
+  color: rgb(255, 255, 255);
+  font-size: 0;
+  line-height: 1;
+}
+
+.words span {
+  font-size: 120px;
+  display: inline-block;
+  animation: move 3s ease-in-out infinite;
+  -webkit-animation: move 3s ease-in-out infinite;
+}
+
+.words span:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.words span:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.words span:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+.words span:nth-child(5) {
+  animation-delay: 2s;
+}
+
+.words span:nth-child(6) {
+  animation-delay: 2.5s;
+}
+
+.words span:nth-child(7) {
+  animation-delay: 3s;
+}
+
+.words span:nth-child(8) {
+  animation-delay: 3.5s;
+}
+
+.words span:nth-child(9) {
+  animation-delay: 4s;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-33%, 0);
+  }
+
+  50% {
+    text-shadow: 0 21px 20px rgba(75, 74, 74, 0.6);
+  }
+
+  100% {
+    transform: translate(33%, 0);
+  }
 }
 
 /* sec02 */
@@ -149,19 +221,32 @@ section.sec01 .sec01img{
   color: #1d1c1c;
 }
 
-section.sec02 .main {
-  font-size: 1rem;
-  text-align: center;
-  margin: 36px 10px 0 10px;
-  border: 1px solid #5f514f;
-  border-radius: 15px;
-  padding: 12px 0 12px 0;
-  width: 120px;
-  height: 50px;
-  -webkit-border-radius: 15px;
-
+section.sec02 .mainlink {
+  background: rgb(218, 2, 2);
+  color: rgb(240, 8, 8);
+  border: 0;
+  font-size: 1em;
+  letter-spacing: 0px;
+  padding: 11px 36px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 300px 10px;
+  transition: all 0.5s;
+  position: relative;
+  top:70px;
+  left: -390px;
+  overflow: hidden;
+  border-radius: 38px;
+  border: 1px solid#a5a4a4a4;
 }
-
+section.sec02 .mainlink:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(255, 0, 0);
+  transition: all 0.8s; 
+}
+section.sec02 .mainlink a:hover {
+  color: rgb(255, 0, 0);
+}
 .page {
   display: flex;
   justify-content: center;
@@ -235,20 +320,38 @@ section.sec03 {
   color: #1d1c1c;
 }
 
-.main:hover {
-  background-color: #a7979766;
-  background-size: contain;
+.sec03 .mainlink:hover {
+  background: rgba(255, 255, 255, 0.432);
+  color: rgb(49, 21, 21);
+  transition: all 0.9s;
+  -webkit-transition: all 0.9s;
+  -moz-transition: all 0.9s;
+  -ms-transition: all 0.9s;
+  -o-transition: all 0.9s;
 }
 
-section.sec03 .main  {
-  font-size: 1rem;
+.sec03 .mainlink a:hover {
+  color: rgb(59, 13, 13);
+}
+
+.sec03 .mainlink {
   text-align: center;
-  margin: 274px 84px 0 -133px;
-  border: 1px solid #5f514f;
-  border-radius: 15px;
-  padding: 12px 0 12px 0;
-  width: 120px;
-  height: 50px;
+  background: rgb(48, 20, 20);
+  color: rgb(59, 20, 20);
+  border: 0;
+  font-size: 1em;
+  letter-spacing: 0px;
+  padding: 12px 45px 42px 45px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 300px 10px;
+  transition: all 0.5s;
+  position: relative;
+  top:-12px;
+  right: 173px;
+  overflow: hidden;
+  border: 1px solid#a5a4a4a4;
+  border-radius: 38px;
 }
 
 /* sec04 */

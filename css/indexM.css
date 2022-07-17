@@ -4,7 +4,7 @@ body {
     overflow-x: hidden;
     min-width: 320px;
 }
-section.sec01 .sec01img {
+/* section.sec01 .sec01img {
     background-size: contain;
 
 }
@@ -13,7 +13,7 @@ section.sec01 .sec01img {
     height: 160px;
     left: -14px;
     top: 148px;
-}
+} */
 .sec01 h1 {
     font-size: 1.5rem;
 }
