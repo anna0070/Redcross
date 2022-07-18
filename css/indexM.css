@@ -4,47 +4,66 @@ body {
     overflow-x: hidden;
     min-width: 320px;
 }
-/* section.sec01 .sec01img {
-    background-size: contain;
 
+section.sec01 {
+    padding: 20px 267px 0 17px
 }
-section.sec01 .sec01img {
-    width: 739px;
-    height: 160px;
-    left: -14px;
-    top: 148px;
-} */
+
+.words span {
+    font-size: 60px;
+}
+
 .sec01 h1 {
     font-size: 1.5rem;
 }
+
 .sec01 h1 {
     color: #421010;
     padding: 200px 45px 0px 94px
 }
+.sec02.text p,
+.sec03.text p {
+    font-size: 1rem;}
+
 .section.sec01 .sec01img {
     background-size: contain;
     width: 750px;
-    height: 115px;}
-.sec02 h1 {
-    padding: 105px;
+    height: 115px;
+}
+
+section.sec02 {
+    height: 220vh;
+}
+
+.sec02 h1,
+.sec03 h1 {
+    margin-left: 20px;
     font-size: 1.8rem;
 }
-.sec03 h1 {
-    padding: 105px;
-    font-size: 1.8rem;
+
+section.sec02 .mainlink {
+    margin: 0 0 0 0px;
+}
+
+section.sec02 .mainlink {
+    top: 1294px;
+    left: -280px;
 }
 
 .sec02.text {
     width: 282px;
     height: 447px;
 }
+
 .sec03.text {
     width: 282px;
     height: 300px;
 }
-
+.sec03 .mainlink {
+    top: 990px;
+    right: 226px;}
 .sec02.innerimg {
-    top: -18px;
+    top: -4px;
     left: 4px;
     width: 290px;
     height: 825px;
@@ -56,39 +75,34 @@ section.sec01 .sec01img {
     width: 290px;
     height: 825px;
 }
-section.sec01 {
-    height: 100vh;
-}
-section.sec02 {
-    height: 230vh;
-}
 
-section.sec03 {
-        height: 234vh;
-}
-section.sec04 {
-    height: 15vh;
-}
+
 .sec02.innerimg01 {
     top: 510px;
     right: -67px;
 }
+
 .sec03.innerimg01 {
     top: 546px;
     right: -61px;
+}
+section.sec03 {
+    height: 220vh;
 }
 
 section.sec02 .main {
     position: relative;
     top: 1264px;
-    left: -246px;}
+    left: -246px;
+}
 
 section.sec03 .main {
     position: relative;
     top: 1254px;
     left: -190px;
 }
-.page {    
+
+.page {
     flex-direction: row;
 }
 
@@ -103,6 +117,7 @@ section.sec02 .main {
     height: 50px;
     -webkit-border-radius: 250px;
 }
+
 section.sec03 .main {
     font-size: 0.9rem;
     text-align: center;
@@ -114,10 +129,16 @@ section.sec03 .main {
     height: 50px;
     -webkit-border-radius: 250px;
 }
+
 .sec04 {
-flex-direction: row;
-font-size: 0.9rem;}
-.sec04 h1{
+    flex-direction: row;
+    font-size: 0.9rem;
+}
+
+.sec04 h1 {
     font-size: 1rem;
     margin-right: 5px;
+}
+section.sec04 {
+    height: 22vh;
 }

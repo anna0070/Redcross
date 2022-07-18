@@ -107,12 +107,12 @@ header>.top>.inner>.mgnb.on {
 }
 
 .img02 {
-    background: url(../imges/redcross/mv_mb_banner0517_01.jpg) 50% 50% no-repeat;
+    background: url(../imges/redcross/mv_mb_banner20220715_01.jpg) 50% 50% no-repeat;
     background-size: contain;
 }
 
 .img03 {
-    background: url(../imges/redcross/mv_mb_banner1207_01.jpg) 50% 50% no-repeat;
+    background: url(../imges/redcross/mv_mb_banner20220715_02.jpg) 50% 50% no-repeat;
     background-size: contain;
 }
 
@@ -148,9 +148,7 @@ video {
     margin: -228px 0px 0 0px;
 }
 
-/* .blood01{
- margin: 0 0 0 0px;
-} */
+
 .blood {
     display: flex;
     flex-wrap: wrap

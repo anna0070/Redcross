@@ -6,9 +6,20 @@ body{
 .wrap {
 scroll-snap-type: none
 }
+section.sec01 {
+    padding: 172px;}
+.words span {
+        font-size: 97px;   }
 .sec01 h1{
     font-size: 0.9rem;}
-
+    section.sec02 .mainlink {
+        top: 0px; 
+    left: -459px;
+    }
+    .sec03 .mainlink { 
+        top: -46px;
+        right: 369px;
+    }
 section.sec01 .sec01img {
     background-size: contain;
     width: 750px;
@@ -24,7 +35,7 @@ section.sec01 .sec01img {
     flex-wrap: wrap;
 }
 section.sec02 {
-    height: 130vh;
+    height: 120vh;
 }
 
 

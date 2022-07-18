@@ -97,7 +97,7 @@ header {
     height: 200px;
     background: url(../imges/redcross/top011.png) no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+  
 }
 
 header .top .inner .gnb span:first-child {
@@ -764,13 +764,11 @@ header > .top > .inner > .mgnb {
 }
 
  .s04 {
-    background: url(../imges/redcross/banner.04.jpg) no-repeat;
+    background: url(../imges/redcross/main_alrimpan_20220708.jpg) no-repeat;
     background-size: cover;
 }
-/* 추후이벤트 */
-/*.s05 {
-    background: url(/imges/redcross/alrimpan_0318_01.jpg) no-repeat;
-    background-size: cover; }*/
+
+
 
 .right_sns_img {
     background: url(../imges/redcross/banner_area_img220601_01.png) no-repeat;
