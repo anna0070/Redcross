@@ -71,7 +71,7 @@ section.sec02 .mainlink {
 
 .sec03.innerimg {
     top: 60px;
-    left: 4px;
+    left: 0px;
     width: 290px;
     height: 825px;
 }
@@ -95,13 +95,16 @@ section.sec02 .main {
     top: 1264px;
     left: -246px;
 }
-
+.sec03.innerimg01 {
+    top: 11px;
+    right: -64px;}
 section.sec03 .main {
     position: relative;
     top: 1254px;
     left: -190px;
 }
-
+.sec03 .mainlink {
+    padding: 12px 45px 37px 45px;}
 .page {
     flex-direction: row;
 }

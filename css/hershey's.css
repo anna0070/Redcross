@@ -200,7 +200,7 @@ body {
 }
 
 .history p {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   letter-spacing: -1px;
   margin: 20px 0 20px 0px;
   text-align: center;
@@ -219,12 +219,6 @@ font: bold;
 }
 
 
- /* .sec02 {
-width: 100%;
-background-color: #33100c;
- height: 523px;
-} */
-
 .box02 {
   display: flex;
   flex-wrap: wrap; 
@@ -239,20 +233,21 @@ background-color: #33100c;
 }
 
 .story01 {
-    /* background: url("/imges/Hershys/hershey_ai.png") no-repeat; */
-    background: url(../imges/Hershys/living-the-bannerimage.jpeg) 50% 50% no-repeat;
+    background: url(../imges/Hershys/living-the-bannerimage.jpeg) 43% 50% no-repeat;
     background-size: cover;
     width: 300px;
     height: 285px;
     margin: 115px 60px 0 60px;
+    border-radius:150px;
    
 }
  .story02 {
-    background: url(../imges/Hershys/sustainability-shared.jpg) 50% 50% no-repeat;
+    background: url(../imges/Hershys/sustainability-shared.jpg) 48% 50% no-repeat;
     background-size: cover;
     width: 300px;
     height: 285px;
     margin: 115px 60px 0 60px;
+    border-radius:150px;
  }
 
 .story03 {
@@ -261,6 +256,7 @@ background-color: #33100c;
     width: 300px;
     height: 285px;
     margin: 115px 60px 0 60px;
+    border-radius:150px;
 } 
 
 

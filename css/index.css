@@ -80,7 +80,7 @@ li {
 } */
 
 section:nth-of-type(4) {
-  background: #58594D
+  background: #ffffff
 }
 
 /* section.sec01 .sec01img{
@@ -233,20 +233,23 @@ section.sec02 .mainlink {
   margin: 300px 10px;
   transition: all 0.5s;
   position: relative;
-  top:70px;
+  top: 70px;
   left: -390px;
   overflow: hidden;
   border-radius: 38px;
   border: 1px solid#a5a4a4a4;
 }
+
 section.sec02 .mainlink:hover {
   background: rgb(255, 255, 255);
   color: rgb(255, 0, 0);
-  transition: all 0.8s; 
+  transition: all 0.8s;
 }
+
 section.sec02 .mainlink a:hover {
   color: rgb(255, 0, 0);
 }
+
 .page {
   display: flex;
   justify-content: center;
@@ -256,12 +259,22 @@ section.sec02 .mainlink a:hover {
 
 /* SEC03 */
 section.sec03 {
-  background: url(../imges/index/hssec00003.png) no-repeat;
-  background-size: cover;
+  height: 100%;
   width: 100%;
-  height: 1089px;
-  overflow: hidden;
+  background: url(../imges/index/hssec00003.png) center center no-repeat;
+    background-size: cover;
+    background-position-y: 0;
+    animation: hs 30s linear infinite;
+}
 
+@keyframes hs {
+  0%   { background-size: 100% auto; }
+  50% { background-size: 140% auto; }
+  100% { background-size: 100% auto; }
+}
+
+.sec03 .mySlides {
+  display: none;
 }
 
 .sec03 h1 {
@@ -273,9 +286,10 @@ section.sec03 {
 
 .sec03.inner {
   display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  flex-direction: row-reverse;
 }
 
 .sec03 span {
@@ -285,20 +299,21 @@ section.sec03 {
 
 .sec03.text {
   display: flex;
-  width: 450px;
-  height: 300px;
+  width: 500px;
+  height: 800px;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
 
 }
 
+/* 
 .sec03.innerimg {
   background: url(../imges/index/hsmain0001.png) no-repeat;
   background-size: contain;
   width: 460px;
   height: 910px;
-}
+} */
 
 .sec03.innerimg01 {
   background: url(../imges/index/hsm.png) no-repeat;
@@ -306,8 +321,8 @@ section.sec03 {
   width: 175px;
   height: 450px;
   position: relative;
-  top: 496px;
-  right: -420px;
+  top: -342px;
+  right: -451px;
 
 }
 
@@ -341,14 +356,14 @@ section.sec03 {
   border: 0;
   font-size: 1em;
   letter-spacing: 0px;
-  padding: 12px 45px 42px 45px;
+  padding: 10px 46px 10px 45px;
   cursor: pointer;
   display: inline-block;
   margin: 300px 10px;
   transition: all 0.5s;
   position: relative;
-  top:-12px;
-  right: 173px;
+  top: -48px;
+  right: 216px;
   overflow: hidden;
   border: 1px solid#a5a4a4a4;
   border-radius: 38px;
@@ -358,6 +373,7 @@ section.sec03 {
 .sec04 h1 {
   font-size: 3rem;
 }
+
 .sec04 {
   display: flex;
   justify-content: center;
@@ -368,5 +384,5 @@ section.sec03 {
   margin: 0 auto;
   align-content: center;
   flex-direction: column;
- 
+
 }
