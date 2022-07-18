@@ -20,7 +20,9 @@ p{
     width: 225px;
     height: 304px;
 }
-
+.nav-link, .nav-link:link, .nav-link:visited, .nav-link:active, .submenu-link, .submenu-link:link, .submenu-link:visited, .submenu-link:active {
+    letter-spacing: 2px; 
+}
 .text01,
 .text02,
 .text03 h2 {

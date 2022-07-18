@@ -20,7 +20,9 @@ body {
 footer {
     display: block
 }
-
+.nav-link, .nav-link:link, .nav-link:visited, .nav-link:active, .submenu-link, .submenu-link:link, .submenu-link:visited, .submenu-link:active {
+    letter-spacing: 2px; 
+}
 .recipesmenu h1 {
     margin: 50px;
     font-size: 1.5rem;
@@ -41,7 +43,7 @@ address {
 
 .nav {
     width: 100%;
-    margin: 0px 0px 58px 0px;
+    margin: 0px 0px 58px 5px;
     text-align: start;
 }
 

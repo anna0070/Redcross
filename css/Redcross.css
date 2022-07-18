@@ -666,18 +666,14 @@ header > .top > .inner > .mgnb {
     background: url(../imges/redcross/적십자소식02.jpg) no-repeat;
     background-size: cover;
     width: 100%;
-    height: 230px;
-    border-radius: 30px;
-    box-shadow: 3px 3px 7px 3px rgb(110, 100, 90);
+    height: 230px; 
 }
 
 .sns02 {
     background: url(../imges/redcross/적십자소식01.jpg) no-repeat;
     background-size: cover;
     width: 100%;
-    height: 230px;
-    border-radius: 30px;
-    box-shadow: 3px 3px 7px 3px rgb(110, 100, 90);
+    height: 230px; 
 }
 
 .sns03 {
@@ -685,9 +681,13 @@ header > .top > .inner > .mgnb {
     background-size: cover;
     width: 100%;
     height: 230px;
+ }   
+.sns01,
+.sns02,
+.sns03{
     border-radius: 30px;
-    box-shadow: 3px 3px 7px 3px rgb(110, 100, 90);
-}
+    box-shadow: 3px 3px 7px 3px rgb(110, 100, 90);}
+
 
 .sec04 .sns .text p {
     padding: 15px 15px 0 15px;

@@ -11,8 +11,9 @@ body {
 
 .nav-items span {
     font-size: 0.8rem;
-   
+
 }
+
 .recipes_photo,
 .brand_photo {
     display: none;
@@ -22,7 +23,9 @@ body {
 
     height: 0;
 }
-
+.nav-link, .nav-link:link, .nav-link:visited, .nav-link:active, .submenu-link, .submenu-link:link, .submenu-link:visited, .submenu-link:active {
+    letter-spacing: 2px; 
+}
 .left_history p {
     font-size: 0.9rem;
     margin: 18px 10px -5px 10px;
@@ -54,23 +57,26 @@ body {
     width: 84px;
     height: 10%;
 }
-
 .menu a {
     font-size: 1rem;
-
 }
 
 .menu-check:checked~.menu {
     max-width: 72px;
 }
-.box01 {flex-direction: column;
 
+.box01 {
+    flex-direction: column;
 }
-.sec01 {
 
+.sec01 {
     width: 100%;
     height: 100%;
     background-color: #33100c;
+}
+
+.history h1 {
+    font-size: 1.5rem;
 }
 
 .left_history {
@@ -83,6 +89,12 @@ body {
 
 }
 
+.history p {
+    font-size: 1rem;
+    letter-spacing: -1px;
+    margin: 20px 0 48px 0px;
+}
+
 .story01,
 .story02,
 .story03 {
@@ -90,7 +102,7 @@ body {
 }
 
 .box01 {
-    height: 128px;
+    height: 328px;
 }
 
 video {
@@ -111,11 +123,15 @@ video {
 .nav {
     text-align: none;
 }
-.logo_01{
+
+.logo_01 {
     display: none;
 }
+
 .slider {
-    top: 155px;}
+    top: 155px;
+}
+
 .story01,
 .story02,
 .story03 {
@@ -158,6 +174,7 @@ video {
     width: 100%;
     height: 180px;
 }
+
 .grid-recipe {
     margin: auto
 }
@@ -202,4 +219,5 @@ address {
     width: 100%;
     height: 1097px;
     flex-direction: column;
-    align-items: center;}
+    align-items: center;
+}

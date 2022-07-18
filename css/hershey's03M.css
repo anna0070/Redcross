@@ -11,10 +11,13 @@ p{
 .nav-link, .nav-link:link, .nav-link:visited, .nav-link:active {
     font-size: 0.8rem;
 }
+.nav-link, .nav-link:link, .nav-link:visited, .nav-link:active, .submenu-link, .submenu-link:link, .submenu-link:visited, .submenu-link:active {
+    letter-spacing: 2px; 
+}
 .event h1{
     font-size: 0.8rem;
     top: 303px;
-    left: 58px;
+    left: 77px;
 }
 .nav-item {
     display: inline-block;
