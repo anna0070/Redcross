@@ -212,14 +212,13 @@ section.sec02 .mainlink {
   border: 0;
   font-size: 1em;
   letter-spacing: 0px;
-  padding: 11px 36px;
+  padding: 10px 46px 10px 45px;
   cursor: pointer;
   display: inline-block;
-  margin: 300px 10px;
   transition: all 0.5s;
   position: relative;
-  top: 70px;
-  left: -390px;
+  top: 50px;
+  left: 0px;
   overflow: hidden;
   border-radius: 38px;
   border: 1px solid#a5a4a4a4;
@@ -254,7 +253,7 @@ section.sec03 {
 
 @keyframes hs {
   0%   { background-size: 100% auto; }
-  50% { background-size: 140% auto; }
+  50% { background-size: 108% auto; }
   100% { background-size: 100% auto; }
 }
 
@@ -292,7 +291,11 @@ section.sec03 {
 
 }
 
-
+.sec03.innerimg{
+  position: relative;
+  top: -30px;
+  left: 20px;
+}
 
 .sec03.innerimg01 {
   background: url(../imges/index/hsm.png) no-repeat;
@@ -336,11 +339,10 @@ section.sec03 {
   padding: 10px 46px 10px 45px;
   cursor: pointer;
   display: inline-block;
-  margin: 300px 10px;
   transition: all 0.5s;
   position: relative;
-  top: -48px;
-  right: 216px;
+  top: 50px;
+  left: 174px;
   overflow: hidden;
   border: 1px solid#a5a4a4a4;
   border-radius: 38px;
