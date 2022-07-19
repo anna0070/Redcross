@@ -2,22 +2,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&family=PT+Serif&family=Scheherazade+New&display=swap');
 /* 구글폰트 */
-@import url('https://fonts.googleapis.com/css2?family=Material+Icons');
-@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+/* @import url('https://fonts.googleapis.com/css2?family=Material+Icons'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined'); */
+/* @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700"); */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
-/* 구글아이콘 */
+
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-
 }
-
 /* outline: 1px solid rgb(238, 2, 2); */
-
-
 a {
   text-decoration: none;
 }
@@ -39,20 +36,13 @@ a:active {
 li {
   list-style-type: none;
 }
-
 body {
-
   background-color: #a38373be;
   background-size: cover;
   overflow-X: hidden;
   font-family: 'Noto Sans KR', sans-serif;
 
 }
-
-
-/* Top */
-/* Navigation */
-
 .nav {
   width: 100%;
   margin: 0px 0 10px 0px;
@@ -120,7 +110,6 @@ body {
   -webkit-transform: translate(0, 5px);
   transform: translate(0, 5px);
 }
-
 .dropdown {
   position: relative;
 }
@@ -131,17 +120,11 @@ body {
   line-height: 17px;
 }
 
-
-
-
-
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-
 .iconmouse {
   position: relative;
   top: 700px;
   left: 48%;
-
 }
 
 .iconmouse img {
@@ -156,8 +139,6 @@ body {
   width: 234px;
   height: 110px;
   margin: auto;
-
-
 }
 
 .sec01 {
@@ -165,7 +146,6 @@ body {
   padding: 0;
 
 }
-
 .history {
   width: 100%;
   height: 100%;
@@ -188,7 +168,6 @@ body {
   justify-content: center;
 }
 
-
 .history span {
   text-decoration: underline;
   color: #cccccc;
@@ -197,6 +176,7 @@ body {
   text-align: center;
   margin: 0 0 25px 0px;
   letter-spacing: -2px;
+ 
 }
 
 .history p {
@@ -217,8 +197,6 @@ font: bold;
   font-weight: 600;
 
 }
-
-
 .box02 {
   display: flex;
   flex-wrap: wrap; 
@@ -259,7 +237,6 @@ background-color: #33100c;
     border-radius:150px;
 } 
 
-
 .box2_01 a {
   display: flex;
   flex-direction: column;
@@ -270,8 +247,6 @@ background-color: #33100c;
   font-size: 1.5rem;
   margin-top: 33px;
 }
-
-
 
 /* background 이미지 01*/
 .brand_photo {
@@ -285,11 +260,9 @@ background-color: #33100c;
   width: 100%;
   padding-top: 230px;
   padding-bottom: 230px;
-  /* overflow: hidden; */
   position: relative;
   background-blend-mode: multiply;
   background-color: #a38373be;
-
 }
 
 .backgroundimg {
@@ -297,13 +270,11 @@ background-color: #33100c;
   background: url(../imges/Hershys/sustainability-cocoa-person-holding-cocoa-pod.jpg) no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  /* -webkit-background-size: cover; */
   background-position: top center;
   height: 50vh;
   width: 100%;
   padding-top: 230px;
   padding-bottom: 230px;
-  /* overflow: hidden; */
   position: relative;
   background-blend-mode: multiply;
   background-color: #a38373be;
@@ -311,7 +282,6 @@ background-color: #33100c;
 }
 
 .recipes_photo {
-
   background: url(../imges/Hershys/hersheysbackground01.png) no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -327,11 +297,6 @@ background-color: #33100c;
   background-color: #b4a39abe;
 
 }
-
-
-/* sec03 
-brand */
-/* #3C131C; */
 
 @keyframes scroll {
   0% {
@@ -390,7 +355,6 @@ brand */
 /* sec04 */
 
 .sec04 {
-
   background-color: #33100c;
   background-size: cover;
   width: 100%;
@@ -423,7 +387,6 @@ brand */
 
 .location-listing {
   position: relative;
-
 }
 
 .location-image {
@@ -466,7 +429,6 @@ brand */
   filter: blur(2px);
 }
 
-
 /* for touch screen devices */
 @media (hover: none) {
   .location-title {
@@ -477,7 +439,6 @@ brand */
     filter: blur(1px);
   }
 }
-
 
 
 /* footer#33100c; */

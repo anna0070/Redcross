@@ -3,9 +3,13 @@
 body {
     min-width: 768px;
 }
+
 .tabV {
-top: 30px;
-left: 5px;}
+    top: 30px;
+    left: 5px;
+}
+
 .conBox h1 {
     color: #a38373;
-    left: 293px;}
+    left: 293px;
+}
