@@ -32,7 +32,7 @@ section.sec01 {
 }
 
 section.sec02 {
-    height: 220vh;
+    height: 232vh;
 }
 
 .sec02 h1,
@@ -41,13 +41,12 @@ section.sec02 {
     font-size: 1.8rem;
 }
 
-section.sec02 .mainlink {
-    margin: 0 0 0 0px;
-}
+
 
 section.sec02 .mainlink {
     top: 1294px;
-    left: -280px;
+    left: -233px;
+
 }
 
 .sec02.text {
@@ -59,9 +58,6 @@ section.sec02 .mainlink {
     width: 282px;
     height: 300px;
 }
-.sec03 .mainlink {
-    top: 990px;
-    right: 226px;}
 .sec02.innerimg {
     top: -4px;
     left: 4px;
@@ -87,7 +83,7 @@ section.sec02 .mainlink {
     right: -61px;
 }
 section.sec03 {
-    height: 220vh;
+    height: 232vh;
 }
 
 section.sec02 .main {
@@ -104,9 +100,11 @@ section.sec03 .main {
     left: -190px;
 }
 .sec03 .mainlink {
-    padding: 12px 45px 37px 45px;}
+    padding: 10px 40px 10px 40px;
+    top: 1290px;
+    right: 226px;}
 .page {
-    flex-direction: row;
+    flex-direction: column;
 }
 
 section.sec02 .main {

@@ -215,7 +215,7 @@ section.sec02 .mainlink {
   border: 0;
   font-size: 1em;
   letter-spacing: 0px;
-  padding: 10px 46px 10px 45px;
+  padding: 10px 40px 10px 40px;
   cursor: pointer;
   display: inline-block;
   transition: all 0.5s;
@@ -225,6 +225,7 @@ section.sec02 .mainlink {
   overflow: hidden;
   border-radius: 38px;
   border: 1px solid#a5a4a4a4;
+  text-align: center;
 }
 
 section.sec02 .mainlink:hover {
@@ -239,7 +240,7 @@ section.sec02 .mainlink a:hover {
 
 .page {
   display: flex;
-  justify-content: center;
+  
 
 }
 
@@ -284,7 +285,7 @@ section.sec03 {
   font-size: 1.2rem;
 }
 
-.sec03.text {
+/* .sec03.text {
   display: flex;
   width: 500px;
   height: 800px;
@@ -292,6 +293,15 @@ section.sec03 {
   flex-direction: column;
   align-items: center;
 
+} */
+
+
+.sec03.text {
+display: flex;
+width: 500px;
+height: 688px;
+flex-wrap: wrap;
+flex-direction: column;
 }
 
 .sec03.innerimg{
@@ -333,7 +343,7 @@ section.sec03 {
 }
 
 .sec03 .mainlink {
-  text-align: center;
+
   background: rgb(48, 20, 20);
   color: rgb(59, 20, 20);
   border: 0;
@@ -345,7 +355,7 @@ section.sec03 {
   transition: all 0.5s;
   position: relative;
   top: 50px;
-  left: 174px;
+  text-align: center;
   overflow: hidden;
   border: 1px solid#a5a4a4a4;
   border-radius: 38px;

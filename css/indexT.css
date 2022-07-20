@@ -23,14 +23,14 @@ section.sec01 {
 
 section.sec02 .mainlink {
     top: 50px;
-    left: -459px;
+    left: 0px;
 }
 
 .sec03 .mainlink {
-    top: -46px;
-    right: 369px;
-    margin: 10px 10px;
-    padding: 15px 50px 15px 50px;
+    top: 5pxpx;
+    right: 0px;
+    margin: 0;
+    padding:auto;
 }
 
 section.sec01 .sec01img {
@@ -112,5 +112,5 @@ section.sec04 {
 }
 
 .sec03.innerimg01 {
-    top: 430px;
+    top: -340px;
 }
