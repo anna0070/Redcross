@@ -183,6 +183,9 @@ section.sec01 {
   background-size: contain;
   width: 490px;
   height: 910px;
+  position: relative;
+  top:60px;
+
 }
 
 .sec02.innerimg01 {
@@ -293,7 +296,7 @@ section.sec03 {
 
 .sec03.innerimg{
   position: relative;
-  top: -30px;
+  top: 60px;
   left: 20px;
 }
 
