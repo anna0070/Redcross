@@ -120,8 +120,8 @@ body {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .iconmouse {
   position: relative;
-  top: 700px;
-  left: 48%;
+  top: 846px;
+  left: 47%;
 }
 
 .iconmouse img {
@@ -139,7 +139,7 @@ body {
 }
 
 .sec01 {
-  margin: 100vh 0 0 0px;
+  margin: 100vh 0 0 0;
   padding: 0;
 
 }
@@ -169,21 +169,23 @@ body {
   text-decoration: underline;
   color: #cccccc;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
   margin: 0 0 25px 0px;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
+  
  
 }
 
 .history p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   letter-spacing: -1px;
-  margin: 20px 0 20px 0px;
+  margin: 20px 400px 20px 400px;
   text-align: center;
-  padding: 10px 0px 10px 0px;
+  padding: 27px 120px 27px 120px;
   color: #fdebe8;
 font: bold;
+letter-spacing: -1px;
 }
 
 .history h1 {
@@ -199,8 +201,9 @@ font: bold;
   flex-wrap: wrap; 
   justify-content: center;
   width: 100%;
-background-color: #33100c;
+ background-color: #33100c;
  height: 523px;
+
 } 
 
 .story01 p {
@@ -208,30 +211,33 @@ background-color: #33100c;
 }
 
 .story01 {
-    background: url(../imges/Hershys/living-the-bannerimage.jpeg) 43% 50% no-repeat;
+    background: url(../imges/Hershys/living.png) 43% 50% no-repeat;
     background-size: cover;
     width: 300px;
     height: 285px;
     margin: 115px 60px 0 60px;
     border-radius:150px;
+      border: 2px solid rgb(223, 196, 193); 
    
 }
  .story02 {
-    background: url(../imges/Hershys/sustainability-shared.jpg) 48% 50% no-repeat;
+    background: url(../imges/Hershys/the-company-factory.jpg) 48% 50% no-repeat;
     background-size: cover;
     width: 300px;
     height: 285px;
     margin: 115px 60px 0 60px;
     border-radius:150px;
+    border: 2px solid rgb(223, 196, 193); 
  }
 
 .story03 {
-    background: url(../imges/Hershys/CategoryDropdown_Gifts_WL.jpg) 50% 50% no-repeat;
+    background: url(../imges/Hershys/b7.png) 50% 50% no-repeat;
     background-size: cover;
     width: 300px;
     height: 285px;
     margin: 115px 60px 0 60px;
     border-radius:150px;
+    border: 2px solid rgb(223, 196, 193); 
 } 
 
 .box2_01 a {
@@ -268,7 +274,7 @@ background-color: #33100c;
   background-size: cover;
   background-attachment: fixed;
   background-position: top center;
-  height: 50vh;
+  height: 35vh;
   width: 100%;
   padding-top: 230px;
   padding-bottom: 230px;
@@ -359,11 +365,11 @@ background-color: #33100c;
 }
 
 .recipetitle {
-  font-size: 2rem;
+  font-size: 2.4rem;
   color: #FCFBFB;
   text-align: center;
   font-weight: 590;
-  padding: 75px 0px 13px 0px;
+  padding: 35px 0px 13px 0px;
   letter-spacing: -3px;
 }
 

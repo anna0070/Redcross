@@ -227,7 +227,9 @@ section.sec02 .mainlink {
   border: 1px solid#a5a4a4a4;
   text-align: center;
 }
-
+.sec02.innerimg01 {
+  height: 304px;
+}
 section.sec02 .mainlink:hover {
   background: rgb(255, 255, 255);
   color: rgb(255, 0, 0);
@@ -314,7 +316,7 @@ flex-direction: column;
   background: url(../imges/index/hsm.png) no-repeat;
   background-size: contain;
   width: 175px;
-  height: 450px;
+  height: 304px;
   position: relative;
   top: -342px;
   right: -451px;
