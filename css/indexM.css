@@ -4,11 +4,16 @@ body {
     overflow-x: hidden;
     min-width: 320px;
 }
-
 section.sec01 {
-    padding: 20px 267px 0 17px
+    height: 75vh;
+}
+section.sec01 {
+padding: 257px 59px 257px 59px;
 }
 
+.wrap {
+    scroll-snap-type: none;
+}
 .words span {
     font-size: 60px;
 }
@@ -32,7 +37,7 @@ section.sec01 {
 }
 
 section.sec02 {
-    height: 232vh;
+    height: 160vh;
 }
 
 .sec02 h1,
@@ -72,7 +77,9 @@ section.sec02 .mainlink {
     height: 825px;
 }
 
-
+.section.sec03 {
+    background: none;
+}
 .sec02.innerimg01 {
     top: 510px;
     right: -67px;
@@ -83,7 +90,7 @@ section.sec02 .mainlink {
     right: -61px;
 }
 section.sec03 {
-    height: 232vh;
+    height: 160vh;
 }
 
 section.sec02 .main {
