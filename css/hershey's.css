@@ -11,6 +11,7 @@
   padding: 0;
   margin: 0;
 }
+
 /* outline: 1px solid rgb(238, 2, 2); */
 a {
   text-decoration: none;
@@ -33,6 +34,7 @@ a:active {
 li {
   list-style-type: none;
 }
+
 body {
   background-color: #a38373be;
   background-size: cover;
@@ -40,6 +42,7 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
 
 }
+
 .nav {
   width: 100%;
   margin: 0px 0 10px 0px;
@@ -107,6 +110,7 @@ body {
   -webkit-transform: translate(0, 5px);
   transform: translate(0, 5px);
 }
+
 .dropdown {
   position: relative;
 }
@@ -143,6 +147,7 @@ body {
   padding: 0;
 
 }
+
 .history {
   width: 100%;
   height: 100%;
@@ -173,19 +178,18 @@ body {
   text-align: center;
   margin: 0 0 25px 0px;
   letter-spacing: -1px;
-  
- 
+
 }
 
 .history p {
+  width: 100%;
   font-size: 1.6rem;
   letter-spacing: -1px;
-  margin: 20px 400px 20px 400px;
   text-align: center;
-  padding: 27px 120px 27px 120px;
+  padding: 27px 400px 27px 400px;
   color: #fdebe8;
-font: bold;
-letter-spacing: -1px;
+  font: bold;
+  letter-spacing: -1px;
 }
 
 .history h1 {
@@ -196,49 +200,51 @@ letter-spacing: -1px;
   font-weight: 600;
 
 }
+
 .box02 {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-content: center;
   width: 100%;
- background-color: #33100c;
- height: 523px;
+  background-color: #33100c;
+  height: 523px;
 
-} 
+}
 
 .story01 p {
   font-size: 0.9rem;
 }
 
 .story01 {
-    background: url(../imges/Hershys/living.png) 43% 50% no-repeat;
-    background-size: cover;
-    width: 300px;
-    height: 285px;
-    margin: 115px 60px 0 60px;
-    border-radius:150px;
-      border: 2px solid rgb(223, 196, 193); 
-   
+  background: url(../imges/Hershys/living.png) 43% 50% no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 285px;
+  margin: 115px 60px 0 60px;
+  border-radius: 150px;
+  border: 2px solid rgb(223, 196, 193);
+
 }
- .story02 {
-    background: url(../imges/Hershys/the-company-factory.jpg) 48% 50% no-repeat;
-    background-size: cover;
-    width: 300px;
-    height: 285px;
-    margin: 115px 60px 0 60px;
-    border-radius:150px;
-    border: 2px solid rgb(223, 196, 193); 
- }
+
+.story02 {
+  background: url(../imges/Hershys/the-company-factory.jpg) 48% 50% no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 285px;
+  margin: 115px 60px 0 60px;
+  border-radius: 150px;
+  border: 2px solid rgb(223, 196, 193);
+}
 
 .story03 {
-    background: url(../imges/Hershys/b7.png) 50% 50% no-repeat;
-    background-size: cover;
-    width: 300px;
-    height: 285px;
-    margin: 115px 60px 0 60px;
-    border-radius:150px;
-    border: 2px solid rgb(223, 196, 193); 
-} 
+  background: url(../imges/Hershys/b7.png) 50% 50% no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 285px;
+  margin: 115px 60px 0 60px;
+  border-radius: 150px;
+  border: 2px solid rgb(223, 196, 193);
+}
 
 .box2_01 a {
   display: flex;
@@ -467,7 +473,7 @@ address {
   flex-direction: column;
   text-emphasis: none;
   font-size: 1rem;
- 
+
 }
 
 .company,
