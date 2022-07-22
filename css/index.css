@@ -205,7 +205,7 @@ section.sec01 {
 
 
 .sec02.text p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #1d1c1c;
 }
 
@@ -221,7 +221,7 @@ section.sec02 .mainlink {
   transition: all 0.5s;
   position: relative;
   top: 50px;
-  left: 0px;
+  left: 75px;
   overflow: hidden;
   border-radius: 38px;
   border: 1px solid#a5a4a4a4;
@@ -328,7 +328,7 @@ flex-direction: column;
 }
 
 .sec03.text p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #1d1c1c;
 }
 
@@ -345,7 +345,7 @@ flex-direction: column;
 }
 
 .sec03 .mainlink {
-
+  left: 82px;
   background: rgb(48, 20, 20);
   color: rgb(59, 20, 20);
   border: 0;
