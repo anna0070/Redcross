@@ -184,7 +184,7 @@ section.sec01 {
   width: 490px;
   height: 910px;
   position: relative;
-  top:60px;
+  
 
 }
 
@@ -221,7 +221,7 @@ section.sec02 .mainlink {
   transition: all 0.5s;
   position: relative;
   top: 50px;
-  left: 75px;
+  /* left: 75px; */
   overflow: hidden;
   border-radius: 38px;
   border: 1px solid#a5a4a4a4;
@@ -308,7 +308,7 @@ flex-direction: column;
 
 .sec03.innerimg{
   position: relative;
-  top: 60px;
+  top: -35px;
   left: 20px;
 }
 

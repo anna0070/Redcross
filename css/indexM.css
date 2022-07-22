@@ -89,7 +89,7 @@ section.sec02 .mainlink {
     right: -61px;
 }
 section.sec03 {
-    height: 200vh;
+    height: 220vh;
 }
 
 section.sec02 .main {
@@ -108,8 +108,8 @@ section.sec03 .main {
 }
 .sec03 .mainlink {
     padding: 10px 40px 10px 40px;
-    top: 1290px;
-    right: 226px;}
+    top: 1302px;
+    left:-220px;}
 .page {
     flex-direction: column;
 }
@@ -141,11 +141,16 @@ section.sec03 .main {
 .sec04 {
     flex-direction: row;
     font-size: 1rem;
+    flex-wrap: nowrap;
+    position: relative;
+    top: 116px;
+    flex-direction: column;
+    align-items: center;
 }
+  
 
 .sec04 h1 {
     font-size: 1.5rem;
-    margin-right: 5px;
 }
 section.sec04 {
     height: 50vh;
